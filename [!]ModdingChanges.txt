@@ -1,0 +1,664 @@
+GOALS AND PHILOSOPHIES:
+	1) Nerf gun damage to reduce constant one-shot kills (especially from pistols)
+	2) Make Assault Rifles less overpowered, make non-Assault Rifles worth using
+	3) Balance weapon accuracy around close-quarters combat
+	4) Integrate changes from Liberal Additions
+	5) Real weapon names
+	6) More weapons
+---
+Standardized weapon damage (Fixed/Random/Total) based on ammo type. These are a baseline.
+---
+		5.7: 15/20 (15-35, Ex. P90 and Five SeveN)
+		.38: 20/25 (20-45), Ex. .38 Revolver)
+		9mm: 20/25 (20-45), Ex. 9mm Pistol)
+		.44: 25/25 (25-50), Ex. .44 Revolver)
+		.45: 20/30 (20-50), Ex. .45 Pistol)
+		.50: 25/25 (25-50), Ex. Desert Eagle)
+		
+		SMG: 20/25 (20-45, Ex. 9mm SMG)
+		Shotgun: 30/25 (30-55, Ex. Shotgun)
+		Assault: 30/30 (30-60, Ex. M16)
+		Drum: 30/30 (30-60, Ex. M249)
+		Battle Rifle: 35/40 (35-75, Ex. M14)
+		Sniper:	40/40 (40-80, Ex. Sniper Rifle)
+		
+		Gasoline: 40/40 (40-80, Ex. Flamethrower)
+		Molotov: 40/20 (40-60, Ex. Molotov)
+		
+		Small Bladed Melee: 10/35 (10-45, Ex. Knife)
+		Large Bladed Melee: 15/40 (15-55, Ex. Katana)
+		
+		Small Blunt Melee: 25/15 (25-40, Ex. Nightstick)
+		Large Blunt Melee: 30/20 (30-50, Ex. Hammer)
+		
+		Small Empty Gun: 25/15 (25-40, Ex. Pistols, SMGs)
+		Large Empty Gun: 30/20 (30-50, Ex. Rifles, Shotguns)
+---
+Standardized accuracy bonus/successive attack difficulty based on ammo type. These are a baseline.
+(Left = Accuracy Bonus / Right = Successive Attack Difficulty)
+---
+		5.7: 4 / 2 (Ex. P90 and Five SeveN)
+		.38: 3 / 3 (Ex. .38 Revolver)
+		9mm: 3 / 3 (Ex. 9mm Pistol)
+		.45: 2 / 4 (Ex. .45 Pistol)
+		.44: 2 / 4 (Ex. .44 Revolver)
+		.50: 1 / 4 (Ex. Desert Eagle)
+		
+		SMG: 5 / 3 (Ex. MP5 SMG)
+		Shotgun: 4 / 4 (Ex. Shotgun)
+		Assault: -3 / 6 (Ex. M16)
+		Drum: 2 / 6 (Ex. M249)
+		Gasoline: 5 / 1 (Ex. Flamethrower)
+		Battle Rifle: -5/8  (Ex. M14)
+		Sniper: -6 / 6 (Ex. Sniper Rifle)
+		
+		Small Bladed Melee: 3/4 (Ex. Knife)
+		Large Bladed Melee: 2/5 (Ex. Katana)
+		
+		Small Blunt Melee: 4/3 (Ex. Nightstick)
+		Large Blunt Melee: 1/6 (Ex. Hammer)
+		
+		Small Empty Gun: 3/3 (Ex. Pistols, SMGs)
+		Large Empty Gun: 1/6 (Ex. Rifles, Shotguns)
+
+---	
+Critical Hit Chances
+---
+	AK47, M249: crit chance from a three-round burst hitting the target is 75% instead of 100%
+	M4: reduced to 25%
+	M16: reduced to 50%
+---	
+Successive Attack Difficulty
+---
+	AK47: Increased to 6
+	M16: Increased to 5
+	M4: Increased to 4
+---	
+Armor
+---
+	Police Armor: 
+		Armor decreased to 6 (Body)
+	
+	Deathsquad Uniform: 
+		Armor Increased to 6 (Body) / Increased to 4 (Head). 
+		Renamed to Deathsquad Armor.
+		Drug Bonus increased to 6
+	
+	Heavy Combat Armor: 
+		Base Power increased to 10 
+		Assault Bonus increased to 8 
+		Drug Bonus increased to 6
+	
+	SEAL Suit: 
+		Assault Bonus increased to 8 
+		Drug Bonus increased to 6
+	
+	SWAT Armor:
+		Assault Bonus increased to 2
+	
+	Lab Coat: 
+		Drug Bonus increased to 4
+---		
+Armor Piercing (AP)
+---
+	Molotovs have 8 AP. Burn, baby, burn!
+	
+	Small Blunt Melee: 5 AP (Nightsticks)
+	Large Blunt Melee: 6 AP (Baseball Bats, Crowbars, etc) or 7 AP (Maul) or 8 AP (Dwarven Hammer)
+	
+	Small Bladed Melee: 6 AP (Knives)
+	Large Bladed Melee: 7 AP (Axes, Swords)
+	
+	Small Empty Gun used as a club: 5 AP (Pistols, SMGs, Shotguns)
+	Large Empty Gun used as a club: 6 AP (Rifles, Machineguns)
+	
+	AA-12 now fires slugs, giving it as much armor piercing as the rifles
+
+---	
+Number of Attacks (Melee)
+---
+	Crowbar can hit twice
+	Daisho, Sword can attack twice
+	Staff can hit twice
+	Nightstick can hit up to 3x
+	Spraycan can hit up to 3x
+---	
+Weapon Size
+---
+	M4 size decreased to 10, same as shotgun/smg (M4 is a Carbine, not a full-size rifle)
+	Crowbar is size 10
+---	
+Magazine Capacities
+---
+	9mm SMG now has 30 rounds (15 is too low, SMGs usually have 30)
+	.45 Pistol now has 12 rounds (.45 pistols generally have less than 9mm)
+	Desert Eagle now has 8 rounds
+	Flamethrower can now fire up to 3 times
+---	
+Weapon name changes:
+---
+		9mm pistol: Beretta 92
+		.45 Pistol: Colt 1911
+		.38 Rev: .38 S&W
+		.44 Mag: .44 Redhawk
+		Shotgun: R870
+---	
+Ammo Name Changes (Generic-ified ammo piles to accommodate for a variety of calibers/ammo capacities)
+---
+	".38 Speedloader" ---> "Speedloader/Slug Loader" (Name/Future Name)
+	".44 Speedloader" ---> "Magnum Speedloader / Magnum Slug Loader" (Name/Future Name)
+	".45 Pistol Mag" ---> "Medium Pistol Mag / Powerpack" (Name/Future Name)
+	".50AE Pistol Mag" ---> "Heavy Pistol Mag / Powerpack" (Name/Future Name)
+	"9mm Pistol Mag" ---> "Light Pistol Mag / Powerpack" (Name/Future Name)
+	"9mm SMG Mag" ---> "SMG Mag / Powerpack"
+	"Shotgun Shells" ---> "Shotgun Speedloader / Shotgun Plas-loader" (Name/Future Name) (These exist)
+---	
+Vehicles
+---
+	All vehicles:
+		Available at dealership
+		
+	Agent Car:
+		Renamed to Supercar
+		Variety of colors added
+		Available at Dealership
+		Can be stolen. 50 Juice, 32 Heat for stealing. Has an alarm.
+		
+	HMMWV:
+		Can be stolen. 50 Juice, 24 Heat for stealing. Has an alarm.
+		Available at Dealership
+---	
+Other changes
+---
+	Syringe and Flamethrower cause bleeding
+	Flamethrower is legal until Gun Laws become Liberal, because it's actually less regulated than marijuana
+	All shotguns can break locks
+	Dwarven Hammer can break locks + has a buff to bash strength
+	Maul has a buff to bash strength but cannot auto-break locks
+	Landlords are now Conservatives
+	
+	Weapons that do no longer protect against kidnapping:
+		Torch
+		Guitar
+		Spraycan
+		Cross
+		Chain
+		Syringe
+	
+	Certain melee weapons are now size 10, allowing for trenchcoat concealment:
+		Katana
+		Sword
+		Baseball Bat
+		Axe
+		Nightstick
+		Maul 
+	
+	Additional melee weapons can take hostages quietly
+		Baseball Bat
+		Crowbar
+		Dwarven Hammer
+		Maul
+---
+New Clips
+---
+	AP Mag (5.7x28mm): 
+		P90/Five SeveN
+	Sniper Rifle Mag (.30-06):
+		Sniper Rifle 
+	Battle Rifle Mag (7.62x51):
+		M14
+	Sawn-off Shotgun Shells:
+		Sawn-Off
+		Super Shorty
+	Shotgun Drum ("Heavy Shotgun Drum"):
+		AA-12
+---
+New Weapons
+---
+	SUBMACHINE GUNS
+		TDI Vector (.45 SMG / uses SMG ammo / Burst-capable, 2x)
+			25 Fixed / 35 Random Damage (25-60 per shot)
+			Accuracy Bonus: 4
+			Successive Attack Difficulty: 4
+			Armor Piercing: 4
+		
+		Tommy Gun (.45 SMG / uses SMG ammo / Burst-capable, 5x)
+			15 Fixed / 25 Random Damage (15-40 per shot)
+			Accuracy Bonus: 3
+			Successive Attack Difficulty: 5
+			Armor Piercing: 4
+		
+		UMP45 (.45 SMG / uses SMG ammo / Burst-capable, 3x)
+			20 Fixed / 30 Random Damage (20-50 per shot)
+			Accuracy Bonus: 3
+			Successive Attack Difficulty: 4
+			Armor Piercing: 4
+			
+		MP40 (9mm SMG / uses SMG ammo / Burst-capable, 3x)
+			20 Fixed / 25 Random Damage (20-45 per shot)
+			Accuracy Bonus: 3
+			Successive Attack Difficulty: 4
+			Armor Piercing: 4
+		
+		FN P90 (5.7x28 SMG / uses AP ammo / Burst-capable, 3x)
+			15 Fixed / 20 Random Damage (15-35 per shot)
+			Accuracy Bonus: 4
+			Successive Attack Difficulty: 2
+			Armor Piercing: 7
+		
+		PPSH (7.62x25 SMG / uses SMG ammo / Burst-capable, 5x)
+			25 Fixed / 35 Random Damage (25-60 per shot)
+			Accuracy Bonus: 5
+			Successive Attack Difficulty: 4
+			Armor Piercing: 5
+		
+	PISTOL / REVOLVER / MACHINE PISTOL
+		Five SeveN (5.7x28 Pistol / uses AP ammo)
+			15 Fixed / 20 Random Damage (15-35)
+		
+		MAC-10 (.45 Machine Pistol / uses .45 ammo / Burst-capable, 5x / Custom Attack)
+			20 Fixed / 30 Random Damage (20-50 per shot)
+			Accuracy Bonus: 2
+			Successive Attack Difficulty: 6
+			Armor Piercing: 4
+			
+		TEC-9 (9mm Machine Pistol / uses 9mm ammo / Burst-capable, 4x / Custom Attack)
+			20 Fixed / 25 Random Damage (20-45 per shot)
+			Accuracy Bonus: 3
+			Successive Attack Difficulty: 5
+			Armor Piercing: 4
+			
+		WIP: Stechkin APS (Machine Pistol / uses 9mm ammo / Burst-capable)
+		WIP: Skorpion (Machine Pistol / uses 9mm ammo / Burst-capable)
+		WIP: Makarov PMM (Pistol / uses .50 ammo)
+		WIP: Tokarev TT-33 (Pistol / uses .50 ammo)
+		WIP: Walter P38 (Pistol / uses .50 ammo)
+		WIP: Luger P08 (Pistol / uses .50 ammo)
+		WIP: Nagant M1895 (Revolver / uses .44 ammo)
+		WIP: Colt Anaconda (Revolver / uses .38 ammo)
+		WIP: M1879 Reichsrevolver (Revolver / uses .38 ammo)
+		WIP: MP-412 REX (Revolver / uses .44 ammo)
+		WIP: Taurus Judge (Revolver-Shotgun / Uses Shotgun ammo)
+		WIP: .500 S&W (Hand Cannon / uses .44 ammo)
+		
+	UNARMED OR MELEE WEAPONS
+		Brass Knuckles (Unarmed)
+		Spiked Knuckles (Unarmed)
+		Tomahawk (Axe)
+		
+		WIP: 2x4 (Club)
+		WIP: Lead Pipe (Club)
+		WIP: Spiked Bat (Club)
+		WIP: Entrenching Tool (Club)
+		WIP: Machete (Axe)
+		WIP: Calvary Sabre (Sword)
+		
+	DISGUISED WEAPONS
+		WIP: Cane Shotgun (Shotgun / uses Shotgun ammo)
+		WIP: Cellphone Pistol (Pistol / uses .45 ammo)
+		WIP: Umbrella Repeater (Rifle / uses .44 ammo)
+		WIP: Briefcase MP5k (SMG / uses SMG ammo / Burst-capable, 3x)
+		WIP: Cane Sword (Sword)
+		WIP: Switchblade Pen (Knife)
+		
+	SHOTGUNS
+		Sawed-off (Sawn-off Shotgun / uses Shotgun ammo)
+			25 Fixed / 30 Random Damage (25-55)
+			Accuracy Bonus: 2 
+				Poor-quality sawn-off conversion means less accuracy bonus
+
+		Super Shorty (Professional Sawn-off Shotgun / uses Shotgun ammo)
+			25 Fixed / 30 Random Damage (25-55)
+			Accuracy Bonus: 4 
+				Professional-quality sawn-off conversion retains the accuracy bonus
+		
+	RIFLES AND CARBINES
+		M14 (7.62x51 Rifle / uses Battle Rifle ammo)
+			35 Fixed / 40 Random Damage (35-75 Damage)
+			Armor Piercing: 7
+			Successive Attack Difficulty: 8
+			Accuracy Bonus: -5
+			
+		Sniper Rifle (.30-06 Rifle / Uses Sniper ammo / Custom Attack)
+			40 Fixed / 40 Random Damage (40-80 Damage)
+			Armor Piercing: 8
+			Accuracy Bonus: -6
+		
+		WIP: Mini-14 (Rifle / uses Assault Rifle ammo)
+		WIP: WASR (Rifle / uses Assault Rifle ammo)
+		WIP: QBZ-95 Groza (Bullpup Rifle / Uses Assault Rifle ammo)
+		WIP: EM-2 (Bullpup Rifle / Uses Assault Rifle ammo)
+		WIP: TAR-21 (Bullpup Rifle / Uses Assault Rifle ammo)
+		WIP: AKS-74U (Carbine / uses Assault Rifle ammo)
+		WIP: XM8 Compact (Carbine / uses Assault Rifle ammo)
+		WIP: M1 Carbine (Carbine / uses Assault Rifle ammo)
+		WIP: SKS (Rifle / Uses Battle Rifle ammo)
+		WIP: FAL (7.62x51 Rifle / uses Battle Rifle ammo)
+		WIP: RFB (7.62x51 Rifle / uses Battle Rifle ammo)
+		WIP: Steyr Scout (7.62x51 Rifle / uses Battle Rifle ammo)
+		WIP: Mosin Nagant (Rifle / uses Battle Rifle ammo)
+		WIP: Dragunov (Rifle / uses Sniper ammo)
+		WIP: AWM (.338 Rifle / uses Sniper ammo)
+		WIP: M200 Intervention (.408 Rifle / uses Sniper ammo)
+		WIP: Cx4 Storm (9mm Carbine / uses 9mm ammo)
+		WIP: MX4 Storm (.45 Carbine / uses .45 ammo / Burst-capable)
+		WIP: Cowboy Repeater (Carbine / uses .38 ammo)
+		WIP: Trail Carbine (Carbine / uses .44 ammo)
+		
+	MACHINE GUNS
+		PKM (7.62x54mmR MG / Uses Machinegun ammo / Burst-capable, 4x)
+			35 Fixed / 45 Random Damage: (35-80)
+			Accuracy Bonus: 3
+			Successive Attack Difficulty: 7
+			Armor Piercing: 8
+			
+		MG42 (7.92x57mm MG / Uses Machinegun ammo / Burst-capable, 7x)
+			40 Fixed Damage / 40 Random (40-80)
+			Accuracy Bonus: 2
+			Successive Attack Difficulty: 8
+			Armor Piercing: 8
+			
+		XM214 Microgun (5.56 Minigun / Uses Machinegun ammo / Burst-capable, 10x!!!)
+			30 Fixed Damage / 30 Random (30-60)
+			Accuracy Bonus: 5
+			Successive Attack Difficulty: 9
+			Armor Piercing: 7
+		
+		WIP: M60 (7.62x51mm MG / Uses Machinegun ammo / Burst-capable, 5x)
+			35 Fixed /  40 Random Damage (35-75 Damage)
+			Accuracy Bonus: 2
+			Successive Attack Difficulty: 7
+			Armor Piercing: 8
+		
+	THROWABLES
+		WIP: Throwing Knife
+		WIP: Grenade
+		WIP: Incendiary Grenade
+		WIP: Throwing Tomahawk
+		WIP: Nail Bomb
+		WIP: Stinger Grenade
+	
+	OTHER GUNS:
+		WIP: Airsoft Handgun
+		WIP: Airsoft SMG
+		WIP: Airsoft Rifle
+		WIP: Airsoft Machinegun
+		WIP: Airsoft Shotgun
+		WIP: Paintball Gun
+		WIP: Spraycan Flamethrower
+	
+---
+THEMES
+---
+	"Bad Guy" guns (Conservative) are German
+	"Good Guy" guns (Liberal) are Russian
+---	
+WIP: CONSERVATIVE ARMORY AND SKILL EXPANSION
+New weapons are used by NPCs. Some NPCs can spawn with alternative armors.
+---
+	Police Officer:
+		Can occasionally be found wearing Police Uniform instead of Police Armor
+	
+	Police Gang Units: 
+		AR-15
+		.45 Pistol
+		.44 Magnum
+	
+	Deathsquads: 
+		AA-12
+		M249 
+		MG-42 
+		MP40 
+		P90 
+		.44 Mag 
+		Desert Eagle 
+		Vector 
+		Microgun
+		Sniper Rifle
+		M14
+	
+	CEOs: 
+		Five SeveN
+		.44 Mag
+	
+	Agents: 
+		.45 Pistol
+		Five SeveN
+		P90
+		AA-12
+		Vector
+		UMP-45
+		MP40
+		Tommy Gun
+		Desert Eagle
+		MAC-10
+		TEC-9
+		Sniper
+	
+	Secret Service: 
+		MAC-10
+		TEC-9
+		.45 Pistol
+		P90
+		Five SeveN
+		Vector
+		UMP45
+		MP40
+		M4 Carbine
+	
+	CCS Officer: 
+		M249, 
+		Flamethrower 
+		MG42
+		MP40
+		Microgun
+		
+	CCS Arsonist:
+		Molotov
+	
+	Military Police: 
+		P90
+		Five SeveN
+		Vector
+		UMP45
+		MP40
+		MG42
+		.45 Pistol
+		.44 Mag
+		AA-12
+		Desert Eagle
+		MP5
+		M14
+		Tomahawk
+	
+	Soldier: 
+		Shotgun
+		M4 Carbine
+		9mm Pistol
+		45 Pistol
+		MP5
+		Super Shorty
+		M14
+		Tomahawk
+		Combat Knife
+		Can occasionally be found wearing Army Uniform instead of Army Armor
+	
+	SEALs: 
+		P90
+		Five SeveN
+		AA-12
+		Vector
+		Super Shorty
+		Combat Knife
+		Tomahawk
+	
+	SWAT: 
+		P90, Five SeveN, UMP45
+		
+	Priest:
+		Sawed-Off
+		Cross
+		
+	Nun:
+		Cross
+		.45 Pistol
+	
+	Bartender:
+		Sawed-Off
+		
+	Prostitute:
+		Knife
+		Brass Knuckles
+		
+	Professional Thief:
+		Crowbar
+		
+	CCS Sniper:
+		Sniper Rifle
+		M14
+		
+	Locksmith:
+		Crowbar
+	
+	///Added Heavy Weapons skill to CCS Bosses/Soldiers/SEALs/Agents/Deathsquads to go along with them potentially spawning with a M249.
+	///Throwing/Pistol/Shotgun/SMG for SEALs, although it's not as high as their Rifle skill
+	///Throwing/Shotgun for Soldiers since they use Nades/Shotgun now
+	///SMG/Shotgun for Deathsquads
+	///SMG for SWAT
+---	
+WIP: ARMOR
+---
+	Expanded Appropriate Weapons for Armor now that Conservatives use more guns.
+---	
+WIP: SPENDING EXPANSION
+---
+	Pawnshop:
+		Fullscreen interface
+		Sells lower-end guns and certain melee weapons
+		
+		Pistols:
+			MAC10 ($1000)
+			TEC-9 ($800)
+
+		Submachine Guns:
+			Tommygun ($1100)
+			PPSH ($1300)
+
+		Shotguns:
+			Sawn-off ($400)
+			
+		Rifles:
+			M14 ($1600)
+		
+		Melee:
+			Brass Knuckles ($40)
+			Spiked Knuckles ($60)
+			Tomahawk ($80)
+		
+		Clips:
+			Battle Rifle Mag (Ex. M14)
+			Sawn-Off Shells (Ex. Sawn-Off / Shorty)
+			Heavy Shotgun Drum (Ex. AA-12)
+
+	Arms Dealer (Gang Members):
+		Can sell guns to arms dealers
+		Sells everything, but prices increase with illegality (WIP)
+
+	Dept Store:
+		Fullscreen interface
+		Sells higher-end guns, but is affected by legality (WIP)
+
+	Oubliette:
+		Fullscreen interface
+		
+		Sells melee weapons for you to get medieval with:
+			Pitchfork
+			Brass Knuckles
+			Spiked Knuckles
+		
+		WIP: Rebalance the Oubliette prices
+	
+	Used Cars:
+		Supercar costs $100k
+
+---
+FUTURE PLANS
+---
+
+REBALANCE/OVERHAUL IDEAS THAT CANNOT BE DONE THROUGH XML?
+	"Two-tier" Kidnap System
+		Melee weapons protect you from kidnapping against other melee, but not guns
+		Guns protect you from kidnapping against melee weapons AND guns
+		
+	Ammo Pools
+		See: http://www.bay12forums.com/smf/index.php?topic=171444.msg8016447#msg8016447
+		
+	"C" Gun Law and Beyond
+		Civilians start carrying guns at "C" Gun Laws (Handguns) 
+		Civilians carry a wider, heavily-armed variety of guns at "C+" Gun Laws (Rifles, machineguns, SMGs). It's the second amendment, after all.
+		
+	"Death's Door/Bleedout"
+		Hitting 0 health incapacitates you. Hitting -50 health kills you.
+		
+	"Attack to wound/Attack to kill" combat style
+		Toggle your attack styles to focus on wounding (Only limbs can be targeted) or killing (default combat style)
+		
+	Automatic Targeting Upgrade / Smart Targeting
+		Targets that are "Badly Wounded" or "Near Death" are not valid targets IF healthier targets are still alive. 
+		Your Liberals are much smarter in combat, and will not focus all their fire on a near-death target instead of a healthy target.
+		
+	"Manual Combat Targeting" toggle
+		Toggle this option to manually control WHO your squadmates attack. Useful for focusing your fire on a tank before killing off the escorts.
+		
+	"X Sees the Squad's Liberal Weapons"
+		Get rid of this fucking bullshit. It should merely INCREASE suspicion when in public, not INSTANTLY raise the alarm. Only have it raise the alarm in private areas (Ex. Military Base, Prison)
+		
+	Vice Squad Chase Sequence
+		Getting caught by the Vice Squad while prostituting gives you the "On-foot escape sequence" for when you get caught selling brownies. The player has more control over what their Liberals should do if they get caught prostituting, rather than instant arrest.
+		
+	CCS Safehouses
+		You can now take an alternative route, letting you sneak into the safehouse.
+		The CCS boss CAN and WILL escape if you take too long to get to him when Conservatives are alerted.
+		
+	Automatic Reload Outside of Combat
+		Liberals with empty weapons are capable of reloading outside of combat. Simply press the "Fight" key when nobody is in sight, and any Liberals with empty weapons will reload.
+		
+	Skill Progression
+		"Fast" skill progression affects ALL skills. Driving, Seduction, Persuasion, etc. Not just a select few.
+		
+	Raids
+		The Police Station is no longer able to launch Army raids against you now. Only the Army Base can do that.
+			Shutting down the Police Station stops SWAT raids, but will NOT stop Army raids
+			Shutting down the Army Base stops Army raids, but will NOT stop SWAT raids.
+		
+	Pawnshop
+		Damaged Clothes can be sold, but for no money OR half money
+		
+	Assigned Ammo
+		Option to assign ALL available ammo to a Liberal, rather than one at a time
+		
+	Firing Range
+		The Firing Range can train weapon skills up to level FOUR, but no more. $120 a day to cover for ammo expenses.
+		
+---
+/// OLD and ARCHIVED BELOW: IGNORE THIS
+Reduced lethality of guns (Less one-shot kills)
+	Burst-capable weapons (AA12/AK47/M4/M16/M249/MP5) have maximum random damage nerfed
+	Non-burst weapons (38/44/45/9mm/AR15/deagle/shotgun) have maximum random damage nerfed
+		AK47 stronger than 5.56-based weapons (AR15/M16/M4).
+		.45 stronger than 9mm-based weapons (9mm/SMG)
+		No difference between 5.56/7.62 and 9mm/45 damage in vanilla LCS
+	Higher-caliber weapons (7.62/44/45/50) still out-damage lower-caliber (38/9mm/5.56) due to being nerfed less
+
+Accuracy rebalance for close-quarters combat (Smaller guns more accurate, bigger guns less accurate in general)
+	AK47: -5 accuracy penalty due to recoil of a 7.62 and weapon length
+	M4: -2
+	M16: -4 due to burst fire
+	AR15: -3
+	SMG: +3
+	38, 9mm: +2
+	44, 45: +1
+	M249: -1
+	Flamethrower: +5
+/// OLD and ARCHIVED ABOVE: IGNORE THAT
+---

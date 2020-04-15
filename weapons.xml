@@ -1,0 +1,1971 @@
+<weapons>
+    <!-- Clarification
+    <weapontype idname="(string)"> idname is used internally by the game to identify the weapon type.
+                                   No two item types should have the same idname.
+        <name> (string) The name of the weapon.
+            Default: UNDEFINED
+        <name_future> (string) The name of the weapon past year 2100.
+            Defaults to normal name.
+        <shortname> (string) A shorter name for the weapon. Max 9 characters for guns, 14 for others.
+            Defaults to normal name if it's not too long, otherwise UNDEF.
+        <shortname_future> (string) A shorter name used past year 2100.
+            Defaults to normal future name if it's not too long, otherwise UNDEF.
+        <can_take_hostages> (boolean) If the weapon can be used to take hostages quietly.
+            Default: false
+        <threatening> (boolean) If the weapon appears threatening. (Attracts bullets, threaten landlord)
+            Default: false
+        <can_threaten_hostages> (boolean) If the weapon can be used to threaten a held hostage.
+            Default: true
+        <protects_against_kidnapping> (boolean) If the weapon makes someone too dangerous to kidnap.
+            Default: true
+        <musical_attack> (boolean) If the weapon uses a special musical attack, eg guitars.
+            Default: false
+        <instrument> (boolean) The weapon will give a bonus when fund raising with music.
+            Default: false
+        <graffiti> (boolean) Weapon can be used to make graffiti.
+            Default: false
+        <legality> (-3, -2, -1, 0, 1, 2) Most liberal gun law for weapon to be legal. (-3 always illegal.)
+            Default: 2
+        <fencevalue> (integer) Money received when selling weapon at pawn shop.
+            Default: 0
+        <bashstrengthmod> (integer) Percent modifier for strength when bashing something while holding the weapon.
+            Default: 100
+        <auto_break_locks> (boolean) The weapon will allow door breaking attempts to always be succesful.
+            Default: false
+        <suspicious> (boolean) If it is suspicious to carry the weapon.
+            Default: true
+        <size> (integer) Size is relevant for if a piece of clothing can conceal the weapon.
+            Default: 15 (trenchcoat conceals 10, all other 5; unless changed of course)
+        <attack>
+            <priority> (integer) Attack used depends on situation and priority, eg priority 1 chosen before priority 2 if situation permits.
+                Default: 1
+            <ranged> (boolean) If the weapon is ranged.
+                Default: false
+            <thrown> (boolean) If the weapon is thrown.
+                Default: false
+            <ammotype> (cliptype)
+            <attack_description> (string) How the attack is descriped.
+                Default: assaults
+            <hit_description> (string) Description for the hit. Used when multiple hits.
+                Default: striking
+            <always_describe_hit> (boolean) Describe the hit even if only one hit occured.
+                Default: false
+            <hit_punctuation> (string)
+                Default: .
+            <skill> (skill name) The skill used with the weapon.
+                Default: CLUB
+            <accuracy_bonus> (integer) Bonus to accuracy.
+                Default: 0
+            <can_backstab> (boolean) If the weapon can be used to sneak attack enemies silently.
+                Default: false
+            <number_attacks> (integer) The number of attacks done with the weapon in one round of combat.
+                Default: 1
+            <successive_attacks_difficulty> (integer) Higher number makes it harder to hit more than once.
+                Default: 0
+            <strentgh_min> (integer) Minimum strength needed to use weapon without penalty. (Not for ranged.)
+                Default: 5
+            <strength_max> (integer) Maximum strength that will give bonus when using weapon. (Not for ranged.)
+                Default: 10
+            <random_damage> (integer) Random value for damage, from 0 to n-1 where n is the given value, per hit.
+                Default: 1
+            <fixed_damage> (integer) Fixed damage per hit.
+                Default: 1
+            <bruises> (boolean) Will give "bruised" status.
+                Default: false
+            <tears> (boolean) Will give "torn" status.
+                Default: false
+            <cuts> (boolean) Will give "cut" status.
+                Default: false
+            <burns> (boolean) Will give "burned" status.
+                Default: false
+            <shoots> (boolean) Will give "shot" status. If all of bruises, tears, cut, burns and shoots
+                               are false, bruises will be turned true.
+                Default: false
+            <bleeding> (boolean) Will cause bleeding.
+                Default: false
+            <severtype> (CLEAN, NASTY, NONE)
+                Default: NONE
+            <damages_armor> (boolean) Will damage armors if any damage is done to a covered body part.
+                Default: false
+            <armorpiercing> (integer) Armor piercing ability.
+                Default: 0
+            <no_damage_reduction_for_limbs_chance> (integer) Chance of 100 that damage to limbs won't be reduced to non-lethal.
+                Default: 0
+            <critical>
+                <chance> (integer) Chance of 100 the strike will be considered a critical.
+                    Default: 0
+                <hits_required> (integer) Number of hits required to get critical strike.
+                    Default: 1
+                <random_damage> (integer) Random damage if hit is critical per hit.
+                    Defaults to normal random damage.
+                <fixed_damage> (integer) Fixed damage if hit is critical per hit.
+                    Defaults to normal fixed damage.
+                <severtype> (CLEAN, NASTY, NONE) Sever type if hit is critical.
+                    Defaults to normal sever type.
+            </critical>
+            <fire>
+                <chance> (integer) The chance that the weapon will start a fire. (of 100)
+                    Default: 0
+                <chance_causes_debris> (integer)  Chance of 100 using the weapon will cause debris in the square.
+                    Default: 0
+            </fire>
+        </attack>
+    </weapontype>
+    -->
+
+    <weapontype idname="WEAPON_NONE">
+        <name>None</name>
+        <shortname>None</shortname>
+        <suspicious>false</suspicious>
+        <can_threaten_hostages>false</can_threaten_hostages>
+        <protects_against_kidnapping>false</protects_against_kidnapping>
+        <size>0</size>
+        <attack>
+            <!-- Need to be fixed in code.
+            <attack_description> -->
+            <skill>HANDTOHAND</skill>
+            <accuracy_bonus>0</accuracy_bonus>
+            <!-- Need to be fixed in code.
+            <number_attacks>
+            <successive_attacks_difficulty>
+            -->
+            <strentgh_min>5</strentgh_min>
+            <strength_max>10</strength_max>
+            <!--Need to be fixed in code.
+            <random_damage>
+            <fixed_damage> -->
+            <bruises>true</bruises>
+        </attack>
+    </weapontype>
+
+    <weapontype idname="WEAPON_REVOLVER_38">
+        <name>.38 SW</name>
+        <name_future>.38 Slug Pistol</name_future>
+        <shortname>.38 SW</shortname>
+        <shortname_future>.38 Slug</shortname_future>
+        <can_take_hostages>true</can_take_hostages>
+        <threatening>true</threatening>
+        <legality>1</legality>
+        <fencevalue>50</fencevalue>
+        <size>5</size>
+        <attack>
+            <priority>1</priority>
+            <ranged>true</ranged>
+            <attack_description>shoots at</attack_description>
+            <skill>PISTOL</skill>
+            <ammotype>CLIP_38</ammotype>
+            <random_damage>25</random_damage> <!-- Liberal Overhaul/Rebalance -->
+            <fixed_damage>20</fixed_damage> <!-- Liberal Overhaul/Rebalance -->
+            <shoots>true</shoots>
+            <bleeding>true</bleeding>
+            <damages_armor>true</damages_armor>
+            <armorpiercing>3</armorpiercing>
+			<accuracy_bonus>3</accuracy_bonus> <!-- Liberal Overhaul/Rebalance -->
+        </attack>
+        <attack>
+            <priority>2</priority>
+            <strength_min>2</strength_min>
+            <strength_max>6</strength_max>
+            <attack_description>swings at</attack_description>
+            <skill>CLUB</skill>
+            <random_damage>15</random_damage> <!-- Liberal Overhaul/Rebalance -->
+            <fixed_damage>25</fixed_damage> <!-- Liberal Overhaul/Rebalance -->
+			<armorpiercing>5</armorpiercing> <!-- Liberal Overhaul/Rebalance -->
+            <bruises>true</bruises>
+        </attack>
+    </weapontype>
+
+    <weapontype idname="WEAPON_REVOLVER_44">
+        <name>.44 Redhawk</name>
+        <name_future>.44 Heavy Slug Pistol</name_future>
+        <shortname>.44 Rev</shortname>
+        <shortname_future>.44 Slug</shortname_future>
+        <can_take_hostages>true</can_take_hostages>
+        <threatening>true</threatening>
+        <legality>-1</legality>
+        <fencevalue>100</fencevalue>
+        <size>5</size>
+        <attack>
+            <priority>1</priority>
+            <ranged>true</ranged>
+            <attack_description>shoots at</attack_description>
+            <skill>PISTOL</skill>
+            <ammotype>CLIP_44</ammotype>
+            <random_damage>25</random_damage> <!-- Liberal Overhaul/Rebalance -->
+            <fixed_damage>25</fixed_damage> <!-- Liberal Overhaul/Rebalance -->
+            <shoots>true</shoots>
+            <bleeding>true</bleeding>
+            <damages_armor>true</damages_armor>
+            <armorpiercing>4</armorpiercing>
+			<accuracy_bonus>2</accuracy_bonus> <!-- Liberal Overhaul/Rebalance -->
+        </attack>
+        <attack>
+            <priority>2</priority>
+            <attack_description>swings at</attack_description>
+            <skill>CLUB</skill>
+            <strength_min>2</strength_min>
+            <strength_max>6</strength_max>
+            <random_damage>15</random_damage> <!-- Liberal Overhaul/Rebalance -->
+            <fixed_damage>25</fixed_damage> <!-- Liberal Overhaul/Rebalance -->
+			<armorpiercing>5</armorpiercing> <!-- Liberal Overhaul/Rebalance -->
+            <bruises>true</bruises>
+        </attack>
+    </weapontype>
+
+    <weapontype idname="WEAPON_SEMIPISTOL_45">
+        <name>Colt 1911</name>
+        <name_future>.45 Laser Pistol</name_future>
+        <shortname>1911</shortname>
+        <shortname_future>.45 Las.</shortname_future>
+        <can_take_hostages>true</can_take_hostages>
+        <threatening>true</threatening>
+        <legality>0</legality>
+        <fencevalue>100</fencevalue>
+        <size>5</size>
+        <attack>
+            <priority>1</priority>
+            <ranged>true</ranged>
+            <attack_description>shoots at</attack_description>
+            <skill>PISTOL</skill>
+            <ammotype>CLIP_45</ammotype>
+            <random_damage>30</random_damage> <!-- Liberal Overhaul/Rebalance -->
+            <fixed_damage>20</fixed_damage> <!-- Liberal Overhaul/Rebalance -->
+            <shoots>true</shoots>
+            <bleeding>true</bleeding>
+            <damages_armor>true</damages_armor>
+            <armorpiercing>4</armorpiercing>
+			<accuracy_bonus>2</accuracy_bonus> <!-- Liberal Overhaul/Rebalance -->
+        </attack>
+        <attack>
+            <priority>2</priority>
+            <attack_description>swings at</attack_description>
+            <skill>CLUB</skill>
+            <strength_min>2</strength_min>
+            <strength_max>6</strength_max>
+            <random_damage>15</random_damage>
+            <fixed_damage>25</fixed_damage>
+			<armorpiercing>5</armorpiercing> <!-- Liberal Overhaul/Rebalance -->
+            <bruises>true</bruises>
+        </attack>
+    </weapontype>
+
+    <weapontype idname="WEAPON_SEMIPISTOL_9MM">
+        <name>Beretta 92</name>
+        <name_future>9mm Laser Pistol</name_future>
+        <shortname>B92.</shortname>
+        <shortname_future>9mm Las.</shortname_future>
+        <can_take_hostages>true</can_take_hostages>
+        <threatening>true</threatening>
+        <legality>0</legality>
+        <fencevalue>100</fencevalue>
+        <size>5</size>
+        <attack>
+            <priority>1</priority>
+            <ranged>true</ranged>
+            <attack_description>shoots at</attack_description>
+            <skill>PISTOL</skill>
+            <ammotype>CLIP_9</ammotype>
+            <random_damage>25</random_damage> <!-- Liberal Overhaul/Rebalance -->
+            <fixed_damage>20</fixed_damage> <!-- Liberal Overhaul/Rebalance -->
+            <shoots>true</shoots>
+            <bleeding>true</bleeding>
+            <damages_armor>true</damages_armor>
+            <armorpiercing>4</armorpiercing>
+			<accuracy_bonus>3</accuracy_bonus> <!-- Liberal Overhaul/Rebalance -->
+        </attack>
+        <attack>
+            <priority>2</priority>
+            <attack_description>swings at</attack_description>
+            <skill>CLUB</skill>
+            <strength_min>2</strength_min>
+            <strength_max>6</strength_max>
+            <random_damage>15</random_damage>
+            <fixed_damage>25</fixed_damage>
+			<armorpiercing>5</armorpiercing> <!-- Liberal Overhaul/Rebalance -->
+            <bruises>true</bruises>
+        </attack>
+    </weapontype>
+
+    <weapontype idname="WEAPON_SHOTGUN_AA12">
+        <name>AA-12 Shotgun</name>
+        <name_future>Z-12 Chain Burstgun</name_future>
+        <shortname>AA-12</shortname>
+        <shortname_future>Z-12</shortname_future>
+        <can_take_hostages>true</can_take_hostages>
+        <threatening>true</threatening>
+        <legality>-1</legality>
+        <fencevalue>400</fencevalue>
+        <bashstrengthmod>125</bashstrengthmod>
+		<auto_break_locks>true</auto_break_locks> <!-- Liberal Overhaul/Rebalance: Breach the lock with a shotgun -->
+        <size>10</size>
+        <attack>
+            <priority>1</priority>
+            <ranged>true</ranged>
+            <attack_description>shoots at</attack_description>
+            <skill>SHOTGUN</skill>
+            <ammotype>CLIP_SHOTGUN_DRUM</ammotype> <!-- Shotgun drum added -->
+            <random_damage>25</random_damage> <!-- Liberal Overhaul/Rebalance -->
+            <fixed_damage>30</fixed_damage> <!-- Liberal Overhaul/Rebalance -->
+            <shoots>true</shoots>
+            <bleeding>true</bleeding>
+            <damages_armor>true</damages_armor>
+            <armorpiercing>7</armorpiercing> <!-- Orig value: 0. Slug Rounds added. -->
+            <accuracy_bonus>4</accuracy_bonus> <!-- Liberal Overhaul/Rebalance -->
+            <number_attacks>2</number_attacks>
+            <successive_attacks_difficulty>4</successive_attacks_difficulty> <!-- Liberal Overhaul/Rebalance -->
+            <severtype>NASTY</severtype>
+        </attack>
+        <attack>
+            <priority>2</priority>
+            <attack_description>swings at</attack_description>
+            <skill>CLUB</skill>
+            <strength_min>6</strength_min>
+            <strength_max>12</strength_max>
+            <random_damage>20</random_damage>
+            <fixed_damage>30</fixed_damage>
+			<armorpiercing>5</armorpiercing> <!-- Liberal Overhaul/Rebalance -->
+            <bruises>true</bruises>
+        </attack>
+    </weapontype>
+
+    <weapontype idname="WEAPON_AUTORIFLE_AK47">
+        <name>AK-47</name>
+        <name_future>P74 War Laser</name_future>
+        <shortname>AK-47</shortname>
+        <shortname_future>P74 War</shortname_future>
+        <can_take_hostages>true</can_take_hostages>
+        <threatening>true</threatening>
+        <legality>-2</legality>
+        <fencevalue>500</fencevalue>
+        <bashstrengthmod>125</bashstrengthmod>
+        <size>15</size>
+        <attack>
+            <priority>1</priority>
+            <ranged>true</ranged>
+            <attack_description>shoots at</attack_description>
+            <skill>RIFLE</skill>
+            <ammotype>CLIP_ASSAULT</ammotype>
+            <random_damage>35</random_damage>
+            <fixed_damage>35</fixed_damage>
+            <shoots>true</shoots>
+            <bleeding>true</bleeding>
+            <damages_armor>true</damages_armor>
+            <armorpiercing>7</armorpiercing>
+			<accuracy_bonus>-4</accuracy_bonus> <!-- Accuracy Penalty: Unwieldy in close quarters, recoil of a 7.62x39 -->
+            <number_attacks>3</number_attacks>
+            <successive_attacks_difficulty>7</successive_attacks_difficulty> <!-- Hard to keep on target due to severe recoil. Original value: 3-->
+            <critical>
+                <chance>75</chance> <!-- 100% crit chance from a 3-round burst reduced to 75% -->
+                <hits_required>3</hits_required>
+                <severtype>NASTY</severtype>
+            </critical>
+        </attack>
+        <attack>
+            <priority>2</priority>
+            <attack_description>swings at</attack_description>
+            <skill>CLUB</skill>
+            <strength_min>6</strength_min>
+            <strength_max>12</strength_max>
+            <random_damage>20</random_damage>
+            <fixed_damage>30</fixed_damage>
+			<armorpiercing>6</armorpiercing> <!-- Liberal Overhaul/Rebalance -->
+            <bruises>true</bruises>
+        </attack>
+    </weapontype>
+
+    <weapontype idname="WEAPON_SEMIRIFLE_AR15">
+        <name>AR-15</name>
+        <name_future>X15 Personal Laser</name_future>
+        <shortname>AR-15</shortname>
+        <shortname_future>X15 Semi</shortname_future>
+        <can_take_hostages>true</can_take_hostages>
+        <threatening>true</threatening>
+        <legality>-1</legality>
+        <fencevalue>250</fencevalue>
+        <bashstrengthmod>125</bashstrengthmod>
+        <size>15</size>
+        <attack>
+            <priority>1</priority>
+            <ranged>true</ranged>
+            <attack_description>shoots at</attack_description>
+            <skill>RIFLE</skill>
+            <ammotype>CLIP_ASSAULT</ammotype>
+            <random_damage>30</random_damage> <!-- Liberal Overhaul/Rebalance -->
+            <fixed_damage>30</fixed_damage> <!-- Liberal Overhaul/Rebalance -->
+            <shoots>true</shoots>
+            <bleeding>true</bleeding>
+            <damages_armor>true</damages_armor>
+            <armorpiercing>7</armorpiercing>
+			<accuracy_bonus>-3</accuracy_bonus> <!-- Accuracy Penalty: unwieldy in close quarters -->
+            <severtype>NONE</severtype>
+        </attack>
+        <attack>
+            <priority>2</priority>
+            <attack_description>swings at</attack_description>
+            <skill>CLUB</skill>
+            <strength_min>6</strength_min>
+            <strength_max>12</strength_max>
+            <random_damage>20</random_damage>
+            <fixed_damage>30</fixed_damage>
+			<armorpiercing>6</armorpiercing> <!-- Liberal Overhaul/Rebalance -->
+            <bruises>true</bruises>
+        </attack>
+    </weapontype>
+
+    <weapontype idname="WEAPON_DESERT_EAGLE">
+        <name>Desert Eagle</name>
+        <name_future>Desert Eagle</name_future>
+        <shortname>Deagle</shortname>
+        <shortname_future>Deagle</shortname_future>
+        <can_take_hostages>true</can_take_hostages>
+        <threatening>true</threatening>
+        <legality>-1</legality>
+        <fencevalue>250</fencevalue>
+        <size>5</size>
+        <attack>
+            <priority>1</priority>
+            <ranged>true</ranged>
+            <attack_description>shoots at</attack_description>
+            <skill>PISTOL</skill>
+            <ammotype>CLIP_50AE</ammotype>
+            <random_damage>25</random_damage> <!-- Liberal Overhaul/Rebalance -->
+            <fixed_damage>25</fixed_damage> <!-- Liberal Overhaul/Rebalance -->
+            <shoots>true</shoots>
+            <bleeding>true</bleeding>
+            <damages_armor>true</damages_armor>
+            <armorpiercing>4</armorpiercing>
+			<accuracy_bonus>1</accuracy_bonus>  <!-- Liberal Overhaul/Rebalance -->
+            <severtype>NASTY</severtype>
+        </attack>
+        <attack>
+            <priority>2</priority>
+            <attack_description>swings at</attack_description>
+            <skill>CLUB</skill>
+            <strength_min>3</strength_min>
+            <strength_max>8</strength_max>
+            <random_damage>15</random_damage>
+            <fixed_damage>25</fixed_damage>
+			<armorpiercing>5</armorpiercing> <!-- Liberal Overhaul/Rebalance -->
+            <bruises>true</bruises>
+        </attack>
+    </weapontype>
+
+    <weapontype idname="WEAPON_FLAMETHROWER">
+        <name>M2 Flamethrower</name>
+        <name_future>Plasma Gun</name_future>
+        <shortname>M2A1-7</shortname>
+        <shortname_future>Plasmagun</shortname_future>
+        <can_take_hostages>true</can_take_hostages>
+        <threatening>true</threatening>
+        <legality>0</legality> <!-- Liberal Rebalance: Actually LESS regulated than marijuana in the US -->
+        <fencevalue>0</fencevalue>
+        <bashstrengthmod>125</bashstrengthmod>
+        <size>15</size>
+        <attack>
+            <priority>1</priority>
+            <ranged>true</ranged>
+            <attack_description>streams fire at</attack_description>
+            <skill>HEAVYWEAPONS</skill>
+            <ammotype>CLIP_GASOLINE</ammotype>
+            <random_damage>40</random_damage> <!-- Liberal Overhaul/Rebalance -->
+            <fixed_damage>40</fixed_damage> <!-- Liberal Overhaul/Rebalance -->
+            <bleeding>true</bleeding> <!-- Liberal Overhaul/Rebalance: Burns can bleed IRL -->
+            <burns>true</burns>
+            <damages_armor>true</damages_armor>
+            <armorpiercing>9</armorpiercing>
+			<accuracy_bonus>5</accuracy_bonus> <!-- Accuracy Bonus: Flames are harder to dodge than bullets. -->
+            <fire>
+                <starts_fire>true</starts_fire>
+                <causes_debris>false</causes_debris>
+                <chance>33</chance>
+            </fire>
+        </attack>
+        <attack>
+            <priority>2</priority>
+            <attack_description>swings at</attack_description>
+            <skill>CLUB</skill>
+            <strength_min>12</strength_min>
+            <strength_max>18</strength_max>
+			<random_damage>20</random_damage>
+            <fixed_damage>30</fixed_damage>
+			<armorpiercing>6</armorpiercing> <!-- Liberal Overhaul/Rebalance -->
+            <bruises>true</bruises>
+        </attack>
+    </weapontype>
+
+    <weapontype idname="WEAPON_CARBINE_M4">
+        <name>M4 Carbine</name>
+        <name_future>J4 Laser Carbine</name_future>
+        <shortname>M4</shortname>
+        <shortname_future>J4 Laser</shortname_future>
+        <can_take_hostages>true</can_take_hostages>
+        <threatening>true</threatening>
+        <legality>-2</legality>
+        <fencevalue>400</fencevalue>
+        <bashstrengthmod>125</bashstrengthmod>
+        <size>10</size> <!-- Size change to 10 in order to reflect the M4 being a carbine. Orig value: 15 -->
+        <attack>
+            <priority>1</priority>
+            <ranged>true</ranged>
+            <attack_description>shoots at</attack_description>
+            <skill>RIFLE</skill>
+            <ammotype>CLIP_ASSAULT</ammotype>
+            <random_damage>25</random_damage> <!-- Less barrel length than an M16, less reliable fragmentation -->
+            <fixed_damage>25</fixed_damage> <!-- Less barrel length than an M16, less reliable fragmentation -->
+            <shoots>true</shoots>
+            <bleeding>true</bleeding>
+            <damages_armor>true</damages_armor>
+            <armorpiercing>7</armorpiercing>
+            <accuracy_bonus>-2</accuracy_bonus> <!-- Accuracy Penalty: burst fire. Carbines are short enough just for close quarters, so less severe accuracy penalty -->
+            <number_attacks>3</number_attacks>
+            <successive_attacks_difficulty>5</successive_attacks_difficulty> <!-- Hard to keep on target due to recoil. Original value: 3-->
+            <critical>
+                <chance>25</chance> <!-- 100% crit chance reduced to 25 -->
+                <hits_required>3</hits_required>
+                <severtype>NASTY</severtype>
+            </critical>
+        </attack>
+        <attack>
+            <priority>2</priority>
+            <attack_description>swings at</attack_description>
+            <skill>CLUB</skill>
+            <strength_min>6</strength_min>
+            <strength_max>12</strength_max>
+            <random_damage>15</random_damage>
+            <fixed_damage>25</fixed_damage>
+			<armorpiercing>6</armorpiercing> <!-- Liberal Overhaul/Rebalance -->
+            <bruises>true</bruises>
+        </attack>
+    </weapontype>
+
+    <weapontype idname="WEAPON_AUTORIFLE_M16">
+        <name>M16</name>
+        <name_future>X15 Military Laser</name_future>
+        <shortname>M16</shortname>
+        <shortname_future>X15 Full</shortname_future>
+        <can_take_hostages>true</can_take_hostages>
+        <threatening>true</threatening>
+        <legality>-2</legality>
+        <fencevalue>500</fencevalue>
+        <bashstrengthmod>125</bashstrengthmod>
+        <size>15</size>
+        <attack>
+            <priority>1</priority>
+            <ranged>true</ranged>
+            <attack_description>shoots at</attack_description>
+            <skill>RIFLE</skill>
+            <ammotype>CLIP_ASSAULT</ammotype>
+            <random_damage>30</random_damage> <!-- Liberal Overhaul/Rebalance -->
+            <fixed_damage>30</fixed_damage> <!-- Liberal Overhaul/Rebalance -->
+            <shoots>true</shoots>
+            <bleeding>true</bleeding>
+            <damages_armor>true</damages_armor>
+            <armorpiercing>7</armorpiercing>
+			<accuracy_bonus>-3</accuracy_bonus> <!-- Accuracy Penalty: Unwieldy in close quarters, burst fire -->
+            <number_attacks>3</number_attacks> 
+            <successive_attacks_difficulty>6</successive_attacks_difficulty> <!-- Hard to keep on target due to recoil. Original value: 3-->
+            <critical>
+                <chance>50</chance> <!-- 100% crit chance reduced to 50 -->
+                <hits_required>3</hits_required>
+                <severtype>NASTY</severtype>
+            </critical>
+        </attack>
+        <attack>
+            <priority>2</priority>
+            <attack_description>swings at</attack_description>
+            <skill>CLUB</skill>
+            <strength_min>6</strength_min>
+            <strength_max>12</strength_max>
+            <random_damage>20</random_damage>
+            <fixed_damage>30</fixed_damage>
+			<armorpiercing>6</armorpiercing> <!-- Liberal Overhaul/Rebalance -->
+            <bruises>true</bruises>
+        </attack>
+    </weapontype>
+
+    <weapontype idname="WEAPON_M249_MACHINEGUN">
+        <name>M249 Machine Gun</name>
+        <name_future>C249 Chaingun</name_future>
+        <shortname>M249</shortname>
+        <shortname_future>Chaingun</shortname_future>
+        <can_take_hostages>true</can_take_hostages>
+        <threatening>true</threatening>
+        <legality>-2</legality>
+        <fencevalue>1500</fencevalue>
+        <bashstrengthmod>125</bashstrengthmod>
+        <size>15</size>
+        <attack>
+            <priority>1</priority>
+            <ranged>true</ranged>
+            <attack_description>shoots at</attack_description>
+            <skill>HEAVYWEAPONS</skill>
+            <ammotype>CLIP_DRUM</ammotype>
+            <random_damage>30</random_damage> <!-- Same 5.56 as the M16 -->
+            <fixed_damage>30</fixed_damage> <!-- Same 5.56 as the M16 -->
+            <shoots>true</shoots>
+            <tears>true</tears>
+            <bleeding>true</bleeding>
+            <damages_armor>true</damages_armor>
+            <armorpiercing>7</armorpiercing>
+            <number_attacks>5</number_attacks>
+            <accuracy_bonus>2</accuracy_bonus> <!-- Accuracy Penalty: Unwieldy in close quarters, but reduced due to spray and pray -->
+            <successive_attacks_difficulty>6</successive_attacks_difficulty> <!-- Original value: 3 -->
+            <critical>
+                <chance>75</chance> <!-- 100% crit chance reduced to 75 -->
+                <hits_required>3</hits_required>
+                <severtype>NASTY</severtype>
+            </critical>
+        </attack>
+        <attack>
+            <priority>2</priority>
+            <attack_description>swings at</attack_description>
+            <skill>CLUB</skill>
+            <strength_min>8</strength_min>
+            <strength_max>14</strength_max>
+            <random_damage>20</random_damage>
+            <fixed_damage>30</fixed_damage>
+			<armorpiercing>6</armorpiercing> <!-- Liberal Overhaul/Rebalance -->
+            <bruises>true</bruises>
+        </attack>
+    </weapontype>
+
+    <weapontype idname="WEAPON_MOLOTOV">
+        <name>Molotov Bomb</name>
+        <name_future>Molotov Bomb</name_future>
+        <shortname>Molotov</shortname>
+        <shortname_future>Molotov</shortname_future>
+        <threatening>true</threatening>
+        <fencevalue>0</fencevalue>
+        <size>15</size>
+        <attack>
+            <priority>1</priority>
+            <ranged>true</ranged>
+            <thrown>true</thrown>
+            <attack_description>hurls a molotov at</attack_description>
+            <hit_description>exploding</hit_description>
+            <always_describe_hit>true</always_describe_hit>
+            <hit_punctuation>!</hit_punctuation>
+            <skill>THROWING</skill>
+            <random_damage>40</random_damage>
+            <fixed_damage>20</fixed_damage> <!-- Liberal Overhaul/Rebalance -->
+            <burns>true</burns>
+            <damages_armor>true</damages_armor>
+            <armorpiercing>8</armorpiercing>
+            <no_damage_reduction_for_limbs_chance>33</no_damage_reduction_for_limbs_chance>
+            <fire>
+                <chance_causes_debris>100</chance_causes_debris>
+                <chance>100</chance>
+            </fire>
+        </attack>
+    </weapontype>
+
+    <weapontype idname="WEAPON_SMG_MP5">
+        <name>MP5 SMG</name>
+        <name_future>Beijing Prince SMG</name_future>
+        <shortname>MP5</shortname>
+        <shortname_future>Prince SMG</shortname_future>
+        <can_take_hostages>true</can_take_hostages>
+        <threatening>true</threatening>
+        <legality>-2</legality>
+        <fencevalue>450</fencevalue>
+        <size>10</size>
+        <attack>
+            <priority>1</priority>
+            <ranged>true</ranged>
+            <attack_description>shoots at</attack_description>
+            <skill>SMG</skill>
+            <ammotype>CLIP_SMG</ammotype>
+            <random_damage>25</random_damage> <!-- Liberal Overhaul/Rebalance -->
+            <fixed_damage>20</fixed_damage> <!-- Liberal Overhaul/Rebalance -->
+            <shoots>true</shoots>
+            <bleeding>true</bleeding>
+            <damages_armor>true</damages_armor>
+            <armorpiercing>4</armorpiercing>
+            <accuracy_bonus>5</accuracy_bonus> <!-- Liberal Overhaul/Rebalance -->
+            <number_attacks>3</number_attacks>
+            <successive_attacks_difficulty>3</successive_attacks_difficulty>
+        </attack>
+        <attack>
+            <priority>2</priority>
+            <attack_description>swings at</attack_description>
+            <skill>CLUB</skill>
+            <strength_min>5</strength_min>
+            <strength_max>10</strength_max>
+            <random_damage>15</random_damage>
+            <fixed_damage>25</fixed_damage>
+            <bruises>true</bruises>
+			<armorpiercing>5</armorpiercing> <!-- Liberal Overhaul/Rebalance -->
+        </attack>
+    </weapontype>
+
+    <weapontype idname="WEAPON_SHOTGUN_PUMP">
+        <name>R870 Shotgun</name>
+        <name_future>Plasma Burstgun</name_future>
+        <shortname>R870</shortname>
+        <shortname_future>Burstgun</shortname_future>
+        <can_take_hostages>true</can_take_hostages>
+        <threatening>true</threatening>
+        <legality>2</legality> <!-- Should always be legal. -->
+        <fencevalue>150</fencevalue>
+        <bashstrengthmod>125</bashstrengthmod>
+		<auto_break_locks>true</auto_break_locks> <!-- Liberal Overhaul/Rebalance: Breach the lock with a shotgun -->
+        <size>10</size>
+        <attack>
+            <priority>1</priority>
+            <ranged>true</ranged>
+            <attack_description>shoots at</attack_description>
+            <skill>SHOTGUN</skill>
+            <ammotype>CLIP_BUCKSHOT</ammotype>
+            <random_damage>25</random_damage> <!-- Liberal Overhaul/Rebalance -->
+            <fixed_damage>30</fixed_damage> <!-- Liberal Overhaul/Rebalance -->
+            <shoots>true</shoots>
+            <bleeding>true</bleeding>
+            <damages_armor>true</damages_armor>
+            <armorpiercing>0</armorpiercing>
+            <accuracy_bonus>4</accuracy_bonus>
+            <severtype>NASTY</severtype>
+        </attack>
+        <attack>
+            <priority>2</priority>
+            <attack_description>swings at</attack_description>
+            <skill>CLUB</skill>
+            <strength_min>6</strength_min>
+            <strength_max>12</strength_max>
+            <random_damage>20</random_damage>
+            <fixed_damage>30</fixed_damage>
+			<armorpiercing>5</armorpiercing> <!-- Liberal Overhaul/Rebalance -->
+            <bruises>true</bruises>
+        </attack>
+    </weapontype>
+
+    <weapontype idname="WEAPON_AXE">
+        <name>Axe</name>
+        <name_future>Laser Axe</name_future>
+        <shortname>Axe</shortname>
+        <shortname_future>Laser Axe</shortname_future>
+        <can_take_hostages>true</can_take_hostages>
+        <threatening>true</threatening>
+        <fencevalue>0</fencevalue>
+        <bashstrengthmod>200</bashstrengthmod>
+        <size>10</size> <!-- Liberal Overhaul -->
+        <attack>
+            <priority>1</priority>
+            <attack_description>chops at</attack_description>
+            <strength_min>6</strength_min>
+            <strength_max>12</strength_max>
+            <skill>AXE</skill>
+            <random_damage>40</random_damage>
+            <fixed_damage>15</fixed_damage>
+            <cuts>true</cuts>
+            <bleeding>true</bleeding>
+            <damages_armor>true</damages_armor>
+            <armorpiercing>7</armorpiercing> <!-- Orig Value: 2 -->
+            <severtype>CLEAN</severtype>
+        </attack>
+    </weapontype>
+
+    <weapontype idname="WEAPON_BASEBALLBAT">
+        <name>Baseball Bat</name>
+        <name_future>Spaceball Bat</name_future>
+		<can_take_hostages>true</can_take_hostages> <!-- Liberal Overhaul -->
+        <threatening>true</threatening>
+        <fencevalue>20</fencevalue>
+        <bashstrengthmod>150</bashstrengthmod>
+        <size>10</size> <!-- Liberal Overhaul -->
+        <attack>
+            <priority>1</priority>
+            <attack_description>swings at</attack_description>
+            <ranged>false</ranged>
+            <strength_min>6</strength_min>
+            <strength_max>12</strength_max>
+            <skill>CLUB</skill>
+            <random_damage>20</random_damage> <!-- Liberal Overhaul/Rebalance -->
+            <fixed_damage>30</fixed_damage> <!-- Liberal Overhaul/Rebalance -->
+            <bruises>true</bruises>
+			<armorpiercing>6</armorpiercing> <!-- Orig Value: None -->
+			<number_attacks>2</number_attacks> <!-- Orig Value: None -->
+            <successive_attacks_difficulty>6</successive_attacks_difficulty>
+        </attack>
+    </weapontype>
+
+    <weapontype idname="WEAPON_CHAIN">
+        <name>Chain</name>
+        <name_future>Industrial Cyber-Arm</name_future>
+        <shortname>Chain</shortname>
+        <shortname_future>CyberArm</shortname_future>
+        <can_take_hostages>true</can_take_hostages>
+		<protects_against_kidnapping>false</protects_against_kidnapping> <!-- Liberal Rebalance -->
+        <fencevalue>10</fencevalue>
+        <suspicious>false</suspicious>
+        <size>5</size>
+        <attack>
+            <priority>1</priority>
+            <attack_description>swings at</attack_description>
+            <strength_min>1</strength_min>
+            <strength_max>6</strength_max>
+            <skill>CLUB</skill>
+            <random_damage>15</random_damage>
+            <fixed_damage>25</fixed_damage>
+            <bruises>true</bruises>
+			<armorpiercing>5</armorpiercing> <!-- Orig Value: None -->
+        </attack>
+    </weapontype>
+
+    <weapontype idname="WEAPON_COMBATKNIFE"> 
+        <name>Combat Knife</name>
+        <name_future>Vibro-Knife</name_future>
+        <can_take_hostages>true</can_take_hostages>
+        <threatening>true</threatening>
+        <fencevalue>20</fencevalue>
+        <bashstrengthmod>105</bashstrengthmod>
+        <size>4</size>
+        <attack>
+            <attack_description>lunges at</attack_description>
+            <hit_description>stabbing</hit_description> <!-- Attack changed from slash to stab -->
+            <skill>KNIFE</skill>
+            <strentgh_min>1</strentgh_min>
+            <strength_max>6</strength_max>
+            <random_damage>35</random_damage>
+            <fixed_damage>10</fixed_damage>
+            <can_backstab>true</can_backstab>
+            <cuts>true</cuts>
+            <bleeding>true</bleeding>
+			<damages_armor>true</damages_armor> <!-- Orig Value: None -->
+            <armorpiercing>6</armorpiercing> <!-- Orig Value: 2 -->
+            <number_attacks>3</number_attacks>
+            <successive_attacks_difficulty>4</successive_attacks_difficulty>
+        </attack>
+    </weapontype>
+
+    <weapontype idname="WEAPON_CROSS">
+        <name>Silver Cross</name>
+        <name_future>Silver Cross</name_future>
+        <shortname>Cross</shortname>
+        <shortname_future>Cross</shortname_future>
+		<protects_against_kidnapping>false</protects_against_kidnapping> <!-- Liberal Rebalance -->
+        <fencevalue>100</fencevalue>
+        <suspicious>false</suspicious>
+        <size>5</size>
+        <attack>
+            <priority>1</priority>
+            <attack_description>swings at</attack_description>
+            <strength_min>1</strength_min>
+            <strength_max>4</strength_max>
+            <skill>CLUB</skill>
+            <random_damage>15</random_damage>
+            <fixed_damage>25</fixed_damage>
+            <bruises>true</bruises>
+			<armorpiercing>5</armorpiercing> <!-- Orig Value: None -->
+        </attack>
+    </weapontype>
+
+    <weapontype idname="WEAPON_CROWBAR">
+        <name>Crowbar</name>
+        <name_future>Forcefield Prybar</name_future>
+        <shortname_future>Prybar</shortname_future>
+		<can_take_hostages>true</can_take_hostages> <!-- Liberal Overhaul -->
+        <threatening>true</threatening>
+        <fencevalue>10</fencevalue>
+        <bashstrengthmod>200</bashstrengthmod>
+        <auto_break_locks>true</auto_break_locks>
+        <size>10</size>
+        <attack>
+            <priority>1</priority>
+            <attack_description>swings at</attack_description>
+            <strength_min>4</strength_min>
+            <strength_max>8</strength_max>
+            <skill>CLUB</skill>
+            <random_damage>25</random_damage> <!-- Hybrid of Large Bladed/Blunt Melee for DMG -->
+            <fixed_damage>30</fixed_damage> <!-- Hybrid of Large Bladed/Blunt Melee for DMG -->
+            <bruises>true</bruises>
+            <bleeding>true</bleeding>
+			<armorpiercing>6</armorpiercing> <!-- Orig Value: None -->
+			<number_attacks>2</number_attacks> <!-- Orig Value: None -->
+            <successive_attacks_difficulty>6</successive_attacks_difficulty>
+        </attack>
+    </weapontype>
+
+    <weapontype idname="WEAPON_DAGGER">
+        <name>Dagger</name>
+        <name_future>Beam Dagger</name_future>
+        <can_take_hostages>true</can_take_hostages>
+        <threatening>true</threatening>
+        <fencevalue>10</fencevalue>
+        <size>5</size>
+        <attack>
+            <attack_description>lunges at</attack_description>
+            <hit_description>stabbing</hit_description>
+            <strength_min>1</strength_min>
+            <strength_max>5</strength_max>
+            <skill>KNIFE</skill>
+            <random_damage>35</random_damage>
+            <fixed_damage>10</fixed_damage>
+            <can_backstab>true</can_backstab>
+            <cuts>true</cuts>
+            <bleeding>true</bleeding>
+            <damages_armor>true</damages_armor>
+            <armorpiercing>6</armorpiercing> <!-- Orig Value: 2 -->
+            <number_attacks>3</number_attacks>
+            <successive_attacks_difficulty>4</successive_attacks_difficulty>
+        </attack>
+    </weapontype>
+
+    <weapontype idname="WEAPON_DAISHO">
+        <name>Daisho</name>
+        <name_sub_1>Katana</name_sub_1>
+        <name_sub_2>Wakizashi</name_sub_2>
+        <name_future>Twin Swords of Liberalism</name_future>
+        <name_future_sub_1>Retribution Sword</name_future_sub_1>
+        <name_future_sub_2>Justice Blade</name_future_sub_2>
+        <shortname>Daisho</shortname>
+        <shortname_future>Twin Sword</shortname_future>
+        <can_take_hostages>true</can_take_hostages>
+        <threatening>true</threatening>
+        <fencevalue>100</fencevalue>
+        <bashstrengthmod>150</bashstrengthmod>
+        <size>10</size> <!-- Liberal Overhaul -->
+        <attack>
+            <priority>1</priority>
+            <attack_description>swings at</attack_description>
+            <strength_min>6</strength_min>
+            <strength_max>12</strength_max>
+            <skill>SWORD</skill>
+            <random_damage>40</random_damage>
+            <fixed_damage>15</fixed_damage> <!-- Liberal Overhaul/Rebalance -->
+            <cuts>true</cuts>
+            <bleeding>true</bleeding>
+            <damages_armor>true</damages_armor>
+            <armorpiercing>7</armorpiercing> <!-- Orig Value: 2 -->
+            <severtype>CLEAN</severtype>
+			<number_attacks>2</number_attacks> <!-- Orig Value: None -->
+            <successive_attacks_difficulty>6</successive_attacks_difficulty>
+        </attack>
+    </weapontype>
+
+    <weapontype idname="WEAPON_GAVEL">
+        <name>Gavel</name>
+        <name_future>Laser Gavel</name_future>
+        <shortname>Gavel</shortname>
+        <shortname_future>Gavel</shortname_future>
+        <fencevalue>20</fencevalue>
+        <suspicious>false</suspicious>
+        <protects_against_kidnapping>false</protects_against_kidnapping>
+        <size>5</size>
+        <attack>
+            <priority>1</priority>
+            <attack_description>swings at</attack_description>
+            <strength_min>1</strength_min>
+            <strength_max>4</strength_max>
+            <skill>CLUB</skill>
+            <random_damage>15</random_damage>
+            <fixed_damage>25</fixed_damage>
+            <bruises>true</bruises>
+			<armorpiercing>5</armorpiercing> <!-- Orig Value: None -->
+        </attack>
+    </weapontype>
+
+    <weapontype idname="WEAPON_GUITAR">
+        <name>Guitar</name>
+        <name_future>Cyber-Keytar</name_future>
+        <shortname>Guitar</shortname>
+        <shortname_future>Keytar</shortname_future>
+        <musical_attack>true</musical_attack>
+        <instrument>true</instrument>
+        <fencevalue>100</fencevalue>
+        <suspicious>false</suspicious>
+        <can_threaten_hostages>false</can_threaten_hostages>
+		<protects_against_kidnapping>false</protects_against_kidnapping> <!-- Liberal Rebalance -->
+        <size>15</size>
+        <attack>
+            <priority>1</priority>
+            <attack_description>swings at</attack_description>
+            <strength_min>4</strength_min>
+            <strength_max>8</strength_max>
+            <skill>CLUB</skill>
+			<armorpiercing>6</armorpiercing> <!-- Liberal Rebalance -->
+            <random_damage>15</random_damage>
+            <fixed_damage>25</fixed_damage>
+            <bruises>true</bruises>
+        </attack>
+    </weapontype>
+
+    <weapontype idname="WEAPON_HAMMER">
+        <name>Dwarven Hammer</name>
+        <name_future>Dwarven Hammer</name_future>
+        <shortname>Hammer</shortname>
+        <shortname_future>Hammer</shortname_future>
+		<can_take_hostages>true</can_take_hostages> <!-- Liberal Overhaul -->
+        <threatening>true</threatening>
+        <fencevalue>100</fencevalue>
+        <bashstrengthmod>200</bashstrengthmod> <!-- Liberal Overhaul/Rebalance -->
+		<auto_break_locks>true</auto_break_locks> <!-- Liberal Overhaul/Rebalance: It's an improvised breaching hammer -->
+        <size>15</size>
+        <attack>
+            <priority>1</priority>
+            <attack_description>swings at</attack_description>
+            <strength_min>8</strength_min>
+            <strength_max>18</strength_max>
+            <skill>CLUB</skill>
+            <random_damage>20</random_damage> <!-- Liberal Overhaul/Rebalance -->
+            <fixed_damage>30</fixed_damage> <!-- Liberal Overhaul/Rebalance -->
+            <bruises>true</bruises>
+            <bleeding>true</bleeding>
+			<armorpiercing>8</armorpiercing> <!-- Liberal Rebalance -->
+        </attack>
+    </weapontype>
+
+    <weapontype idname="WEAPON_MAUL">
+        <name>Maul of Anrin</name>
+        <name_future>Maul of Anrin</name_future>
+        <shortname>Maul</shortname>
+        <shortname_future>Maul</shortname_future>
+		<can_take_hostages>true</can_take_hostages> <!-- Liberal Overhaul -->
+        <threatening>true</threatening>
+        <fencevalue>100</fencevalue>
+        <bashstrengthmod>200</bashstrengthmod> <!-- Liberal Overhaul/Rebalance -->
+        <size>10</size> <!-- Liberal Overhaul -->
+        <attack>
+            <priority>1</priority>
+            <attack_description>swings at</attack_description>
+            <strength_min>8</strength_min>
+            <strength_max>18</strength_max>
+            <skill>CLUB</skill>
+            <random_damage>20</random_damage> <!-- Liberal Overhaul/Rebalance -->
+            <fixed_damage>30</fixed_damage> <!-- Liberal Overhaul/Rebalance -->
+            <bruises>true</bruises>
+			<armorpiercing>6</armorpiercing> <!-- Orig Value: None -->
+        </attack>
+    </weapontype>
+
+    <weapontype idname="WEAPON_NIGHTSTICK">
+        <name>Nightstick</name>
+        <name_future>Electro-Shock Stick</name_future>
+        <shortname>Nightstick</shortname>
+        <shortname_future>Shock Stick</shortname_future>
+        <threatening>true</threatening>
+        <fencevalue>20</fencevalue>
+        <bashstrengthmod>125</bashstrengthmod>
+        <suspicious>false</suspicious>
+        <size>10</size> <!-- Liberal Overhaul -->
+        <attack>
+            <priority>1</priority>
+            <attack_description>swings at</attack_description>
+            <strength_min>4</strength_min>
+            <strength_max>8</strength_max>
+            <skill>CLUB</skill>
+            <random_damage>15</random_damage>
+            <fixed_damage>25</fixed_damage>
+            <bruises>true</bruises>
+			<armorpiercing>5</armorpiercing> <!-- Orig Value: None -->
+			<number_attacks>3</number_attacks> <!-- Orig Value: None -->
+            <successive_attacks_difficulty>4</successive_attacks_difficulty>
+        </attack>
+    </weapontype>
+
+    <weapontype idname="WEAPON_PITCHFORK">
+        <name>Pitchfork</name>
+        <name_future>Space Pitchfork</name_future>
+        <shortname>Pitchfork</shortname>
+        <shortname_future>Pitchfork</shortname_future>
+        <threatening>true</threatening>
+        <fencevalue>20</fencevalue>
+        <bashstrengthmod>125</bashstrengthmod>
+        <size>15</size>
+        <attack>
+            <priority>1</priority>
+            <attack_description>stabs at</attack_description>
+            <strength_min>6</strength_min>
+            <strength_max>12</strength_max>
+            <skill>SWORD</skill>
+            <random_damage>40</random_damage>
+            <fixed_damage>15</fixed_damage>
+            <cuts>true</cuts>
+            <bleeding>true</bleeding>
+            <damages_armor>true</damages_armor>
+            <armorpiercing>6</armorpiercing> <!-- Orig value: 1 -->
+        </attack>
+    </weapontype>
+
+    <weapontype idname="WEAPON_SHANK">
+        <name>Shank</name>
+        <name_future>Cyber Shank</name_future>
+        <shortname_future>Shank</shortname_future>
+        <can_take_hostages>true</can_take_hostages>
+        <fencevalue>5</fencevalue>
+        <size>5</size>
+        <attack>
+            <attack_description>lunges at</attack_description>
+            <hit_description>stabbing</hit_description>
+            <strength_min>1</strength_min>
+            <strength_max>4</strength_max>
+            <skill>KNIFE</skill>
+            <random_damage>35</random_damage>
+            <fixed_damage>10</fixed_damage>
+            <can_backstab>true</can_backstab>
+            <cuts>true</cuts>
+            <bleeding>true</bleeding>
+            <damages_armor>true</damages_armor>
+            <armorpiercing>6</armorpiercing> <!-- Orig Value: 1 -->
+            <number_attacks>3</number_attacks>
+            <successive_attacks_difficulty>4</successive_attacks_difficulty>
+        </attack>
+    </weapontype>
+
+    <weapontype idname="WEAPON_SPRAYCAN">
+        <name>Spraypaint</name>
+        <name_future>Holo-Paint</name_future>
+        <shortname>Spraypaint</shortname>
+        <shortname_future>Holopaint</shortname_future>
+		<protects_against_kidnapping>false</protects_against_kidnapping> <!-- Liberal Rebalance -->
+        <graffiti>true</graffiti>
+        <fencevalue>2</fencevalue>
+        <suspicious>false</suspicious>
+        <size>5</size>
+        <attack>
+            <priority>1</priority>
+            <attack_description>swings at</attack_description>
+            <strength_min>1</strength_min>
+            <strength_max>4</strength_max>
+            <skill>CLUB</skill>
+            <random_damage>25</random_damage>
+            <fixed_damage>15</fixed_damage>
+            <bruises>true</bruises>
+			<armorpiercing>5</armorpiercing> <!-- Orig Value: None -->
+			<number_attacks>3</number_attacks> <!-- Orig Value: None -->
+            <successive_attacks_difficulty>4</successive_attacks_difficulty>
+        </attack>
+    </weapontype>
+
+    <weapontype idname="WEAPON_STAFF">
+        <name>Wizard's Staff</name>
+        <name_future>Wizard's Staff</name_future>
+        <shortname>Staff</shortname>
+        <shortname_future>Staff</shortname_future>
+        <threatening>true</threatening>
+        <fencevalue>100</fencevalue>
+        <bashstrengthmod>125</bashstrengthmod>
+        <size>15</size>
+        <attack>
+            <priority>1</priority>
+            <attack_description>swings at</attack_description>
+            <strength_min>6</strength_min>
+            <strength_max>12</strength_max>
+            <skill>CLUB</skill>
+            <random_damage>20</random_damage>
+            <fixed_damage>30</fixed_damage>
+            <bruises>true</bruises>
+			<armorpiercing>6</armorpiercing> <!-- Orig Value: None -->
+			<number_attacks>2</number_attacks> <!-- Orig Value: None -->
+            <successive_attacks_difficulty>6</successive_attacks_difficulty>
+        </attack>
+    </weapontype>
+
+    <weapontype idname="WEAPON_SWORD">
+        <name>Sword of Morfiegor</name>
+        <name_future>Light Sword</name_future>
+        <shortname>Sword</shortname>
+        <shortname_future>Light Sword</shortname_future>
+        <can_take_hostages>true</can_take_hostages>
+        <threatening>true</threatening>
+        <fencevalue>100</fencevalue>
+        <bashstrengthmod>150</bashstrengthmod>
+        <size>10</size> <!-- Liberal Overhaul -->
+        <attack>
+            <priority>1</priority>
+            <attack_description>slashes at</attack_description>
+            <strength_min>6</strength_min>
+            <strength_max>12</strength_max>
+            <skill>SWORD</skill>
+            <random_damage>40</random_damage>
+            <fixed_damage>15</fixed_damage>
+            <cuts>true</cuts>
+            <bleeding>true</bleeding>
+            <damages_armor>true</damages_armor>
+            <armorpiercing>7</armorpiercing> <!-- Orig Value: 2 -->
+            <severtype>CLEAN</severtype>
+			<number_attacks>2</number_attacks> <!-- Orig Value: None -->
+            <successive_attacks_difficulty>6</successive_attacks_difficulty>
+        </attack>
+    </weapontype>
+
+    <weapontype idname="WEAPON_SYRINGE">
+        <name>Syringe</name>
+        <name_future>Medical Injector</name_future>
+        <shortname_future>Injector</shortname_future>
+        <can_take_hostages>true</can_take_hostages>
+		<protects_against_kidnapping>false</protects_against_kidnapping> <!-- Liberal Rebalance -->
+        <fencevalue>10</fencevalue>
+        <suspicious>false</suspicious>
+        <size>5</size>
+        <attack>
+            <priority>1</priority>
+            <attack_description>pokes at</attack_description>
+            <strength_min>1</strength_min>
+            <strength_max>2</strength_max>
+            <skill>KNIFE</skill>
+            <random_damage>35</random_damage>
+            <fixed_damage>10</fixed_damage>
+            <cuts>true</cuts>
+            <bleeding>true</bleeding> <!-- Orig Value: False -->
+            <armorpiercing>7</armorpiercing> <!-- Orig Value: 4 -->
+        </attack>
+    </weapontype>
+
+    <weapontype idname="WEAPON_TORCH">
+        <name>Torch</name>
+        <name_future>Burning Flare</name_future>
+        <shortname>Torch</shortname>
+        <shortname_future>Flare</shortname_future>
+		<protects_against_kidnapping>false</protects_against_kidnapping> <!-- Liberal Rebalance -->
+        <threatening>true</threatening>
+        <fencevalue>2</fencevalue>
+        <size>15</size> <!-- You can't conceal a burning torch under your clothes. -->        
+        <attack>
+            <priority>1</priority>
+            <attack_description>swings at</attack_description>
+            <strength_min>1</strength_min>
+            <strength_max>1</strength_max>
+            <skill>CLUB</skill>
+            <random_damage>15</random_damage>
+            <fixed_damage>25</fixed_damage>
+            <burns>true</burns>
+            <damages_armor>true</damages_armor>
+			<armorpiercing>7</armorpiercing> <!-- Orig Value: None -->
+        </attack>
+    </weapontype>
+	
+	<!-- New weapons added by Liberal Overhaul and Rebalance -->
+	
+	<weapontype idname="WEAPON_BRASS_KNUCKLES">
+        <name>Brass Knuckles</name>
+        <name_future>Power Fist</name_future>
+        <threatening>true</threatening>
+        <fencevalue>20</fencevalue>
+        <bashstrengthmod>150</bashstrengthmod>
+        <size>4</size>
+        <attack>
+            <priority>1</priority>
+            <attack_description>punches at</attack_description>
+            <ranged>false</ranged>
+            <strength_min>1</strength_min>
+            <strength_max>6</strength_max>
+            <skill>HANDTOHAND</skill>
+            <random_damage>15</random_damage>
+            <fixed_damage>25</fixed_damage>
+            <bruises>true</bruises>
+			<armorpiercing>6</armorpiercing>
+			<number_attacks>3</number_attacks>
+            <successive_attacks_difficulty>6</successive_attacks_difficulty>
+        </attack>
+    </weapontype>
+	
+	<weapontype idname="WEAPON_SPIKED_KNUCKLES"> 
+        <name>Spiked Knuckles</name>
+        <name_future>Mega Power Fist</name_future>
+		<shortname>S. Knuckles</shortname>
+        <shortname_future>M. PFist</shortname_future>
+        <can_take_hostages>true</can_take_hostages>
+        <threatening>true</threatening>
+        <fencevalue>20</fencevalue>
+        <bashstrengthmod>105</bashstrengthmod>
+        <size>4</size>
+        <attack>
+            <attack_description>punches at</attack_description>
+            <hit_description>punching</hit_description>
+            <skill>HANDTOHAND</skill>
+            <strentgh_min>1</strentgh_min>
+            <strength_max>6</strength_max>
+            <random_damage>35</random_damage>
+            <fixed_damage>10</fixed_damage>
+            <cuts>true</cuts>
+            <bleeding>true</bleeding>
+			<damages_armor>true</damages_armor>
+            <armorpiercing>7</armorpiercing>
+            <number_attacks>3</number_attacks>
+            <successive_attacks_difficulty>4</successive_attacks_difficulty>
+        </attack>
+    </weapontype>
+	
+	
+	<weapontype idname="WEAPON_TOMAHAWK">
+        <name>Tomahawk</name>
+        <name_future>Plasma-Hawk</name_future>
+        <shortname>Tomahawk</shortname>
+        <shortname_future>Plasma-Hawk</shortname_future>
+        <can_take_hostages>true</can_take_hostages>
+        <threatening>true</threatening>
+        <fencevalue>0</fencevalue>
+        <bashstrengthmod>200</bashstrengthmod>
+        <size>5</size>
+        <attack>
+            <priority>1</priority>
+            <attack_description>chops at</attack_description>
+            <strength_min>1</strength_min>
+            <strength_max>6</strength_max>
+            <skill>AXE</skill>
+            <random_damage>35</random_damage>
+            <fixed_damage>10</fixed_damage>
+            <cuts>true</cuts>
+            <bleeding>true</bleeding>
+            <damages_armor>true</damages_armor>
+            <armorpiercing>7</armorpiercing>
+            <severtype>CLEAN</severtype>
+        </attack>
+    </weapontype>
+	
+	
+	<weapontype idname="WEAPON_SMG_P90">
+        <name>P90 SMG</name>
+        <name_future>Tokyo King SMG</name_future>
+        <shortname>P90</shortname>
+        <shortname_future>King SMG</shortname_future>
+        <can_take_hostages>true</can_take_hostages>
+        <threatening>true</threatening>
+        <legality>-2</legality>
+        <fencevalue>450</fencevalue>
+        <size>10</size>
+        <attack>
+            <priority>1</priority>
+            <ranged>true</ranged>
+            <attack_description>shoots at</attack_description>
+            <skill>SMG</skill>
+            <ammotype>CLIP_5.7</ammotype>
+            <random_damage>20</random_damage>
+            <fixed_damage>15</fixed_damage>
+            <shoots>true</shoots>
+            <bleeding>true</bleeding>
+            <damages_armor>true</damages_armor>
+            <armorpiercing>7</armorpiercing>
+            <accuracy_bonus>4</accuracy_bonus>
+            <number_attacks>3</number_attacks>
+            <successive_attacks_difficulty>2</successive_attacks_difficulty>
+        </attack>
+        <attack>
+            <priority>2</priority>
+            <attack_description>swings at</attack_description>
+            <skill>CLUB</skill>
+            <strength_min>5</strength_min>
+            <strength_max>10</strength_max>
+            <random_damage>25</random_damage>
+            <fixed_damage>15</fixed_damage>
+			<armorpiercing>6</armorpiercing>
+            <bruises>true</bruises>
+        </attack>
+    </weapontype>
+	
+	<weapontype idname="WEAPON_FIVESEVEN">     
+        <name>FN Five SeveN</name>
+        <name_future>5.7 Needle Pistol</name_future>
+        <shortname>FN 5.7</shortname>
+        <shortname_future>Needler</shortname_future>
+        <can_take_hostages>true</can_take_hostages>
+        <threatening>true</threatening>
+        <legality>1</legality>
+        <fencevalue>50</fencevalue>
+        <size>5</size>
+        <attack>
+            <priority>1</priority>
+            <ranged>true</ranged>
+            <attack_description>shoots at</attack_description>
+            <skill>PISTOL</skill>
+            <ammotype>CLIP_5.7</ammotype>
+            <random_damage>20</random_damage>
+            <fixed_damage>15</fixed_damage>
+            <shoots>true</shoots>
+            <bleeding>true</bleeding>
+            <damages_armor>true</damages_armor>
+            <armorpiercing>7</armorpiercing>
+			<accuracy_bonus>4</accuracy_bonus>
+        </attack>
+        <attack>
+            <priority>2</priority>
+            <strength_min>2</strength_min>
+            <strength_max>6</strength_max>
+            <attack_description>swings at</attack_description>
+            <skill>CLUB</skill>
+            <random_damage>15</random_damage>
+            <fixed_damage>25</fixed_damage>
+			<armorpiercing>5</armorpiercing>
+            <bruises>true</bruises>
+        </attack>
+    </weapontype>
+	
+	<weapontype idname="WEAPON_AUTORIFLE_M14">
+        <name>M14</name>
+        <name_future>F14 Plasma Rifle</name_future>
+        <shortname>M14</shortname>
+        <shortname_future>F14 Plas.</shortname_future>
+        <can_take_hostages>true</can_take_hostages>
+        <threatening>true</threatening>
+        <legality>-2</legality>
+        <fencevalue>500</fencevalue>
+        <bashstrengthmod>125</bashstrengthmod>
+        <size>15</size>
+        <attack>
+            <priority>1</priority>
+            <ranged>true</ranged>
+            <attack_description>shoots at</attack_description>
+            <skill>RIFLE</skill>
+            <ammotype>CLIP_BATTLE</ammotype>
+            <random_damage>40</random_damage>
+            <fixed_damage>35</fixed_damage>
+            <shoots>true</shoots>
+            <bleeding>true</bleeding>
+            <damages_armor>true</damages_armor>
+            <armorpiercing>7</armorpiercing>
+			<accuracy_bonus>-5</accuracy_bonus> <!-- Accuracy Penalty: Unwieldy in close quarters, recoil of a 7.62x51 -->
+            <number_attacks>3</number_attacks>
+            <successive_attacks_difficulty>8</successive_attacks_difficulty> <!-- Hard to keep on target due to severe recoil.-->
+            <critical>
+                <chance>75</chance> <!-- 100% crit chance from a 3-round burst reduced to 75% -->
+                <hits_required>3</hits_required>
+                <severtype>NASTY</severtype>
+            </critical>
+        </attack>
+        <attack>
+            <priority>2</priority>
+            <attack_description>swings at</attack_description>
+            <skill>CLUB</skill>
+            <strength_min>6</strength_min>
+            <strength_max>12</strength_max>
+            <random_damage>20</random_damage>
+            <fixed_damage>30</fixed_damage>
+			<armorpiercing>6</armorpiercing> <!-- Liberal Overhaul/Rebalance -->
+            <bruises>true</bruises>
+        </attack>
+    </weapontype>
+	
+	<weapontype idname="WEAPON_SNIPER">
+        <name>.30-06 Sniper Rifle</name>
+        <name_future>X62 Gauss Rifle</name_future>
+        <shortname>Sniper</shortname>
+        <shortname_future>Gauss</shortname_future>
+        <can_take_hostages>true</can_take_hostages>
+        <threatening>true</threatening>
+        <legality>-2</legality>
+        <fencevalue>600</fencevalue>
+        <bashstrengthmod>125</bashstrengthmod>
+        <size>15</size>
+        <attack>
+            <priority>1</priority>
+            <ranged>true</ranged>
+            <attack_description>snipes at</attack_description>
+            <skill>RIFLE</skill>
+            <ammotype>CLIP_SNIPER</ammotype>
+            <random_damage>40</random_damage>
+            <fixed_damage>40</fixed_damage>
+            <shoots>true</shoots>
+            <bleeding>true</bleeding>
+            <damages_armor>true</damages_armor>
+            <armorpiercing>8</armorpiercing> <!-- Only Heavy Ceramic Armor can withstand this -->
+			<accuracy_bonus>-6</accuracy_bonus> <!-- Sniper rifle in close quarters? Are you [insane]? -->
+            <severtype>NASTY</severtype>
+        </attack>
+        <attack>
+            <priority>2</priority>
+            <attack_description>swings at</attack_description>
+            <skill>CLUB</skill>
+            <strength_min>6</strength_min>
+            <strength_max>12</strength_max>
+            <random_damage>20</random_damage>
+            <fixed_damage>30</fixed_damage>
+			<armorpiercing>6</armorpiercing>
+            <bruises>true</bruises>
+        </attack>
+    </weapontype>
+	
+	
+	<weapontype idname="WEAPON_AUTOPISTOL_45">
+        <name>MAC-10</name>
+        <name_future>Y2011 AutoLaser</name_future>
+        <shortname>MAC-10</shortname>
+        <shortname_future>AutoLaser</shortname_future>
+        <can_take_hostages>true</can_take_hostages>
+        <threatening>true</threatening>
+        <legality>0</legality>
+        <fencevalue>100</fencevalue>
+        <size>5</size>
+        <attack>
+            <priority>1</priority>
+            <ranged>true</ranged>
+            <attack_description>sprays bullets at</attack_description>
+            <skill>PISTOL</skill>
+            <ammotype>CLIP_45</ammotype>
+            <random_damage>30</random_damage>
+            <fixed_damage>20</fixed_damage>
+            <shoots>true</shoots>
+            <bleeding>true</bleeding>
+            <damages_armor>true</damages_armor>
+            <armorpiercing>4</armorpiercing>
+			<accuracy_bonus>2</accuracy_bonus>
+			<number_attacks>5</number_attacks>
+			<successive_attacks_difficulty>6</successive_attacks_difficulty> <!-- .45 Recoil + massive RoF -->
+        </attack>
+        <attack>
+            <priority>2</priority>
+            <attack_description>swings at</attack_description>
+            <skill>CLUB</skill>
+            <strength_min>2</strength_min>
+            <strength_max>6</strength_max>
+            <random_damage>15</random_damage>
+            <fixed_damage>25</fixed_damage>
+			<armorpiercing>5</armorpiercing>
+            <bruises>true</bruises>
+        </attack>
+    </weapontype>
+	
+	<weapontype idname="WEAPON_AUTOPISTOL_9MM">
+        <name>TEC-9</name>
+        <name_future>93GH Autopistol</name_future>
+        <shortname>TEC-9</shortname>
+        <shortname_future>93GH Auto</shortname_future>
+        <can_take_hostages>true</can_take_hostages>
+        <threatening>true</threatening>
+        <legality>0</legality>
+        <fencevalue>100</fencevalue>
+        <size>5</size>
+        <attack>
+            <priority>1</priority>
+            <ranged>true</ranged>
+            <attack_description>sprays bullets at</attack_description>
+            <skill>PISTOL</skill>
+            <ammotype>CLIP_9</ammotype>
+            <random_damage>25</random_damage>
+            <fixed_damage>20</fixed_damage>
+            <shoots>true</shoots>
+            <bleeding>true</bleeding>
+            <damages_armor>true</damages_armor>
+            <armorpiercing>4</armorpiercing>
+			<accuracy_bonus>3</accuracy_bonus> <!-- Orig value: 0 -->
+			<number_attacks>4</number_attacks>
+			<successive_attacks_difficulty>5</successive_attacks_difficulty>
+        </attack>
+        <attack>
+            <priority>2</priority>
+            <attack_description>swings at</attack_description>
+            <skill>CLUB</skill>
+            <strength_min>2</strength_min>
+            <strength_max>6</strength_max>
+			<random_damage>15</random_damage>
+            <fixed_damage>25</fixed_damage>
+			<armorpiercing>5</armorpiercing>
+            <bruises>true</bruises>
+        </attack>
+    </weapontype>
+	
+	
+	<weapontype idname="WEAPON_VECTOR">
+        <name>TDi Vector</name>
+        <name_future>Shredder SMG</name_future>
+        <shortname>Vector</shortname>
+        <shortname_future>Shredder</shortname_future>
+        <can_take_hostages>true</can_take_hostages>
+        <threatening>true</threatening>
+        <legality>-2</legality>
+        <fencevalue>450</fencevalue>
+        <size>10</size>
+        <attack>
+            <priority>1</priority>
+            <ranged>true</ranged>
+            <attack_description>shoots at</attack_description>
+            <skill>SMG</skill>
+            <ammotype>CLIP_SMG</ammotype>
+            <random_damage>35</random_damage>
+            <fixed_damage>25</fixed_damage>
+            <shoots>true</shoots>
+            <bleeding>true</bleeding>
+            <damages_armor>true</damages_armor>
+            <armorpiercing>4</armorpiercing>
+            <accuracy_bonus>4</accuracy_bonus>
+            <number_attacks>2</number_attacks> <!-- 2-round Burst -->
+            <successive_attacks_difficulty>4</successive_attacks_difficulty> <!-- .45 Recoil -->
+        </attack>
+        <attack>
+            <priority>2</priority>
+            <attack_description>swings at</attack_description>
+            <skill>CLUB</skill>
+            <strength_min>5</strength_min>
+            <strength_max>10</strength_max>
+			<random_damage>15</random_damage>
+            <fixed_damage>25</fixed_damage>
+			<armorpiercing>5</armorpiercing>
+            <bruises>true</bruises>
+        </attack>
+    </weapontype>
+	
+	<weapontype idname="WEAPON_TOMMYGUN">
+        <name>Thompson Submachine Gun</name>
+        <name_future>American Liberator SMG</name_future>
+        <shortname>Tommy Gun</shortname>
+        <shortname_future>Liberator</shortname_future>
+        <can_take_hostages>true</can_take_hostages>
+        <threatening>true</threatening>
+        <legality>-2</legality>
+        <fencevalue>450</fencevalue>
+        <size>10</size>
+        <attack>
+            <priority>1</priority>
+            <ranged>true</ranged>
+            <attack_description>shoots at</attack_description>
+            <skill>SMG</skill>
+            <ammotype>CLIP_SMG</ammotype>
+            <random_damage>25</random_damage>
+            <fixed_damage>15</fixed_damage>
+            <shoots>true</shoots>
+            <bleeding>true</bleeding>
+            <damages_armor>true</damages_armor>
+            <armorpiercing>4</armorpiercing>
+            <accuracy_bonus>3</accuracy_bonus>
+            <number_attacks>5</number_attacks>
+            <successive_attacks_difficulty>5</successive_attacks_difficulty> 
+        </attack>
+        <attack>
+            <priority>2</priority>
+            <attack_description>swings at</attack_description>
+            <skill>CLUB</skill>
+            <strength_min>5</strength_min>
+            <strength_max>10</strength_max>
+			<random_damage>15</random_damage>
+            <fixed_damage>25</fixed_damage>
+			<armorpiercing>5</armorpiercing>
+            <bruises>true</bruises>
+        </attack>
+    </weapontype>
+	
+	<weapontype idname="WEAPON_UMP45">
+        <name>UMP45 SMG</name>
+        <name_future>Kowloon Queen SMG</name_future>
+        <shortname>UMP45</shortname>
+        <shortname_future>Queen</shortname_future>
+        <can_take_hostages>true</can_take_hostages>
+        <threatening>true</threatening>
+        <legality>-2</legality>
+        <fencevalue>450</fencevalue>
+        <size>10</size>
+        <attack>
+            <priority>1</priority>
+            <ranged>true</ranged>
+            <attack_description>shoots at</attack_description>
+            <skill>SMG</skill>
+            <ammotype>CLIP_SMG</ammotype>
+            <random_damage>30</random_damage>
+            <fixed_damage>20</fixed_damage>
+            <shoots>true</shoots>
+            <bleeding>true</bleeding>
+            <damages_armor>true</damages_armor>
+            <armorpiercing>4</armorpiercing>
+            <accuracy_bonus>3</accuracy_bonus>
+            <number_attacks>3</number_attacks>
+            <successive_attacks_difficulty>4</successive_attacks_difficulty> <!-- .45 Recoil -->
+        </attack>
+        <attack>
+            <priority>2</priority>
+            <attack_description>swings at</attack_description>
+            <skill>CLUB</skill>
+            <strength_min>5</strength_min>
+            <strength_max>10</strength_max>
+            <random_damage>15</random_damage>
+            <fixed_damage>25</fixed_damage>
+			<armorpiercing>5</armorpiercing>
+            <bruises>true</bruises>
+        </attack>
+    </weapontype>
+	
+	<weapontype idname="WEAPON_MP40">
+        <name>MP40 SMG</name>
+        <name_future>Fascist SMG</name_future>
+        <shortname>MP40</shortname>
+        <shortname_future>Fascist</shortname_future>
+        <can_take_hostages>true</can_take_hostages>
+        <threatening>true</threatening>
+        <legality>-2</legality>
+        <fencevalue>450</fencevalue>
+        <size>10</size>
+        <attack>
+            <priority>1</priority>
+            <ranged>true</ranged>
+            <attack_description>shoots at</attack_description>
+            <skill>SMG</skill>
+            <ammotype>CLIP_SMG</ammotype>
+            <random_damage>25</random_damage>
+            <fixed_damage>20</fixed_damage>
+            <shoots>true</shoots>
+            <bleeding>true</bleeding>
+            <damages_armor>true</damages_armor>
+            <armorpiercing>4</armorpiercing>
+            <accuracy_bonus>3</accuracy_bonus> <!-- -2 Accuracy Bonus (Total: 3) compared to baseline (SMG) -->
+            <number_attacks>3</number_attacks>
+            <successive_attacks_difficulty>4</successive_attacks_difficulty> <!-- +1 Successive Attack Difficulty (total: 4) compared to baseline (SMG) -->
+        </attack>
+        <attack>
+            <priority>2</priority>
+            <attack_description>swings at</attack_description>
+            <skill>CLUB</skill>
+            <strength_min>5</strength_min>
+            <strength_max>10</strength_max>
+            <random_damage>15</random_damage>
+            <fixed_damage>25</fixed_damage>
+			<armorpiercing>5</armorpiercing>
+            <bruises>true</bruises>
+        </attack>
+    </weapontype>
+	
+	<weapontype idname="WEAPON_PPSH">
+        <name>PPSH SMG</name>
+        <name_future>Communist SMG</name_future>
+        <shortname>PPSH</shortname>
+        <shortname_future>Communist</shortname_future>
+        <can_take_hostages>true</can_take_hostages>
+        <threatening>true</threatening>
+        <legality>-2</legality>
+        <fencevalue>450</fencevalue>
+        <size>10</size>
+        <attack>
+            <priority>1</priority>
+            <ranged>true</ranged>
+            <attack_description>shoots at</attack_description>
+            <skill>SMG</skill>
+            <ammotype>CLIP_SMG</ammotype>
+            <random_damage>35</random_damage>
+            <fixed_damage>25</fixed_damage>
+            <shoots>true</shoots>
+            <bleeding>true</bleeding>
+            <damages_armor>true</damages_armor>
+            <armorpiercing>5</armorpiercing>
+            <accuracy_bonus>5</accuracy_bonus>
+            <number_attacks>5</number_attacks>
+            <successive_attacks_difficulty>4</successive_attacks_difficulty>
+        </attack>
+        <attack>
+            <priority>2</priority>
+            <attack_description>swings at</attack_description>
+            <skill>CLUB</skill>
+            <strength_min>5</strength_min>
+            <strength_max>10</strength_max>
+            <random_damage>15</random_damage>
+            <fixed_damage>25</fixed_damage>
+			<armorpiercing>5</armorpiercing>
+            <bruises>true</bruises>
+        </attack>
+    </weapontype>
+	
+	<weapontype idname="WEAPON_SAWN_OFF">
+        <name>Sawed-off Shotgun</name>
+        <name_future>Scatter-Laser</name_future>
+        <shortname>Sawn-off</shortname>
+        <shortname_future>Scatter-L</shortname_future>
+        <can_take_hostages>true</can_take_hostages>
+        <threatening>true</threatening>
+        <legality>-2</legality>
+        <fencevalue>150</fencevalue>
+        <bashstrengthmod>125</bashstrengthmod>
+		<auto_break_locks>true</auto_break_locks> <!-- Liberal Overhaul/Rebalance: Breach the lock with a shotgun -->
+        <size>5</size> <!-- Even easier to conceal -->
+        <attack>
+            <priority>1</priority>
+            <ranged>true</ranged>
+            <attack_description>shoots at</attack_description>
+            <skill>SHOTGUN</skill>
+            <ammotype>CLIP_SAWNOFF</ammotype>
+            <random_damage>25</random_damage>
+            <fixed_damage>30</fixed_damage>
+            <shoots>true</shoots>
+            <bleeding>true</bleeding>
+            <damages_armor>true</damages_armor>
+            <armorpiercing>0</armorpiercing>
+            <accuracy_bonus>2</accuracy_bonus> <!-- Poor-quality sawn-off conversion means less accuracy bonus -->
+            <severtype>NASTY</severtype>
+        </attack>
+        <attack>
+            <priority>2</priority>
+            <attack_description>swings at</attack_description>
+            <skill>CLUB</skill>
+            <strength_min>6</strength_min>
+            <strength_max>12</strength_max>
+            <random_damage>20</random_damage>
+            <fixed_damage>30</fixed_damage>
+			<armorpiercing>5</armorpiercing>
+            <bruises>true</bruises>
+        </attack>
+    </weapontype>
+	
+	<weapontype idname="WEAPON_SUPER_SHORTY">
+        <name>Super Shorty</name>
+        <name_future>Scatter-Phaser</name_future>
+        <shortname>S. Shorty</shortname>
+        <shortname_future>Scatter-P</shortname_future>
+        <can_take_hostages>true</can_take_hostages>
+        <threatening>true</threatening>
+        <legality>-2</legality>
+        <fencevalue>150</fencevalue>
+        <bashstrengthmod>125</bashstrengthmod>
+		<auto_break_locks>true</auto_break_locks> <!-- Liberal Overhaul/Rebalance: Breach the lock with a shotgun -->
+        <size>5</size> <!-- Even easier to conceal -->
+        <attack>
+            <priority>1</priority>
+            <ranged>true</ranged>
+            <attack_description>shoots at</attack_description>
+            <skill>SHOTGUN</skill>
+            <ammotype>CLIP_SAWNOFF</ammotype>
+            <random_damage>25</random_damage>
+            <fixed_damage>30</fixed_damage>
+            <shoots>true</shoots>
+            <bleeding>true</bleeding>
+            <damages_armor>true</damages_armor>
+            <armorpiercing>0</armorpiercing>
+            <accuracy_bonus>4</accuracy_bonus> <!-- Professional-quality sawn-off conversion retains the accuracy bonus -->
+            <severtype>NASTY</severtype>
+        </attack>
+        <attack>
+            <priority>2</priority>
+            <attack_description>swings at</attack_description>
+            <skill>CLUB</skill>
+            <strength_min>6</strength_min>
+            <strength_max>12</strength_max>
+            <random_damage>20</random_damage>
+            <fixed_damage>30</fixed_damage>
+			<armorpiercing>5</armorpiercing>
+            <bruises>true</bruises>
+        </attack>
+    </weapontype>
+	
+	
+	<weapontype idname="WEAPON_PKM_MACHINEGUN">
+        <name>PKM Machine Gun</name>
+        <name_future>XPM-74 Gatling Laser</name_future>
+        <shortname>PKM</shortname>
+        <shortname_future>XPM-74</shortname_future>
+        <can_take_hostages>true</can_take_hostages>
+        <threatening>true</threatening>
+        <legality>-2</legality>
+        <fencevalue>1500</fencevalue>
+        <bashstrengthmod>125</bashstrengthmod>
+        <size>15</size>
+        <attack>
+            <priority>1</priority>
+            <ranged>true</ranged>
+            <attack_description>shoots at</attack_description>
+            <skill>HEAVYWEAPONS</skill>
+            <ammotype>CLIP_DRUM</ammotype>
+            <random_damage>35</random_damage>
+            <fixed_damage>45</fixed_damage>
+            <shoots>true</shoots>
+            <tears>true</tears>
+            <bleeding>true</bleeding>
+            <damages_armor>true</damages_armor>
+            <armorpiercing>7</armorpiercing>
+            <number_attacks>4</number_attacks>
+            <accuracy_bonus>3</accuracy_bonus>
+            <successive_attacks_difficulty>7</successive_attacks_difficulty> <!-- More recoil than 5.56, heavy -->
+            <critical>
+                <chance>75</chance> <!-- 100% crit chance reduced to 75 -->
+                <hits_required>3</hits_required>
+                <severtype>NASTY</severtype>
+            </critical>
+        </attack>
+        <attack>
+            <priority>2</priority>
+            <attack_description>swings at</attack_description>
+            <skill>CLUB</skill>
+            <strength_min>8</strength_min>
+            <strength_max>14</strength_max>
+            <random_damage>20</random_damage>
+            <fixed_damage>30</fixed_damage>
+			<armorpiercing>6</armorpiercing>
+            <bruises>true</bruises>
+        </attack>
+    </weapontype>
+	
+	<weapontype idname="WEAPON_MG42_MACHINEGUN">
+        <name>MG42 Machine Gun</name>
+        <name_future>XG-72 Buzzsaw</name_future>
+        <shortname>MG-42</shortname>
+        <shortname_future>Buzzsaw</shortname_future>
+        <can_take_hostages>true</can_take_hostages>
+        <threatening>true</threatening>
+        <legality>-2</legality>
+        <fencevalue>1500</fencevalue>
+        <bashstrengthmod>125</bashstrengthmod>
+        <size>15</size>
+        <attack>
+            <priority>1</priority>
+            <ranged>true</ranged>
+            <attack_description>shoots at</attack_description>
+            <skill>HEAVYWEAPONS</skill>
+            <ammotype>CLIP_DRUM</ammotype>
+            <random_damage>40</random_damage>
+            <fixed_damage>40</fixed_damage>
+            <shoots>true</shoots>
+            <tears>true</tears>
+            <bleeding>true</bleeding>
+            <damages_armor>true</damages_armor>
+            <armorpiercing>7</armorpiercing>
+            <number_attacks>7</number_attacks> <!-- Insanely fast rate of fire -->
+            <accuracy_bonus>2</accuracy_bonus> <!-- MASSIVE spray and pray -->
+            <successive_attacks_difficulty>8</successive_attacks_difficulty> <!-- Hard to keep on target -->
+            <critical>
+                <chance>75</chance> <!-- 100% crit chance reduced to 75 -->
+                <hits_required>3</hits_required>
+                <severtype>NASTY</severtype>
+            </critical>
+        </attack>
+        <attack>
+            <priority>2</priority>
+            <attack_description>swings at</attack_description>
+            <skill>CLUB</skill>
+            <strength_min>8</strength_min>
+            <strength_max>14</strength_max>
+            <random_damage>20</random_damage>
+            <fixed_damage>30</fixed_damage>
+			<armorpiercing>6</armorpiercing>
+            <bruises>true</bruises>
+        </attack>
+    </weapontype>
+	
+	<weapontype idname="WEAPON_XM214_MICROGUN">
+        <name>XM214 Microgun</name>
+        <name_future>Vindicator Megagun</name_future>
+        <shortname>Microgun</shortname>
+        <shortname_future>Megagun</shortname_future>
+        <can_take_hostages>true</can_take_hostages>
+        <threatening>true</threatening>
+        <legality>-2</legality>
+        <fencevalue>1500</fencevalue>
+        <bashstrengthmod>125</bashstrengthmod>
+        <size>15</size>
+        <attack>
+            <priority>1</priority>
+            <ranged>true</ranged>
+            <attack_description>shoots at</attack_description>
+            <skill>HEAVYWEAPONS</skill>
+            <ammotype>CLIP_DRUM</ammotype>
+            <random_damage>30</random_damage>
+            <fixed_damage>30</fixed_damage>
+            <shoots>true</shoots>
+            <tears>true</tears>
+            <bleeding>true</bleeding>
+            <damages_armor>true</damages_armor>
+            <armorpiercing>7</armorpiercing>
+            <number_attacks>10</number_attacks> <!-- Jesus CHRIST that's a lot -->
+            <accuracy_bonus>1</accuracy_bonus> <!-- You're spitting out that many bullets -->
+            <successive_attacks_difficulty>9</successive_attacks_difficulty> <!-- Insane ROF = Insane Recoil -->
+            <critical>
+                <chance>75</chance> <!-- 100% crit chance reduced to 75 -->
+                <hits_required>3</hits_required>
+                <severtype>NASTY</severtype>
+            </critical>
+        </attack>
+        <attack>
+            <priority>2</priority>
+            <attack_description>swings at</attack_description>
+            <skill>CLUB</skill>
+            <strength_min>8</strength_min>
+            <strength_max>14</strength_max>
+            <random_damage>20</random_damage>
+            <fixed_damage>30</fixed_damage>
+			<armorpiercing>6</armorpiercing>
+            <bruises>true</bruises>
+        </attack>
+    </weapontype>
+
+</weapons>

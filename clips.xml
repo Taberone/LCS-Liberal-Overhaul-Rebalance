@@ -1,0 +1,130 @@
+<clips>
+    <!-- Clarification
+    <cliptype idname="(string)"> idname is used internally by the game to identify the clip type.
+                                 No two item types should have the same idname.
+        <name> (string) The name of the clip type.
+            Default: UNDEFINED
+        <name_future> (string) The name of the clip type after the year 2100.
+            Defaults to normal name.
+        <ammo> (integer) Amount of ammo in a clip.
+            Default: 1
+        <fencevalue> (integer) Money received when selling at the pawn shop.
+            Default: 0
+    </cliptype>
+    -->
+
+    <cliptype idname="CLIP_38">
+        <name>Speedloader</name> <!-- Liberal Overhaul -->
+        <name_future>Slug Loader</name_future>
+        <ammo>6</ammo>
+        <fencevalue>2</fencevalue>
+    </cliptype>
+
+    <cliptype idname="CLIP_44">
+        <name>Magnum Speedloader</name> <!-- Liberal Overhaul -->
+        <name_future>Magnum Slug Loader</name_future>
+        <ammo>6</ammo>
+        <fencevalue>3</fencevalue>
+    </cliptype>
+
+    <cliptype idname="CLIP_45">
+        <name>Medium Pistol Mag</name> <!-- Liberal Overhaul -->
+        <name_future>Medium Powerpack</name_future>
+        <ammo>12</ammo>
+        <fencevalue>4</fencevalue>
+    </cliptype>
+
+    <cliptype idname="CLIP_50AE">
+        <name>Heavy Pistol Mag</name>  <!-- Liberal Overhaul -->
+        <name_future>Heavy Powerpack</name_future>
+        <ammo>8</ammo>
+        <fencevalue>3</fencevalue>
+    </cliptype>
+
+    <cliptype idname="CLIP_9">
+        <name>Light Pistol Mag</name> <!-- Liberal Overhaul -->
+        <name_future>Light Powerpack</name_future>
+        <ammo>15</ammo>
+        <fencevalue>4</fencevalue>
+    </cliptype>
+
+    <cliptype idname="CLIP_SMG">
+        <name>SMG Mag</name> <!-- Liberal Overhaul -->
+        <name_future>SMG Powerpack</name_future>
+        <ammo>30</ammo> <!-- Liberal Rebalance -->
+        <fencevalue>5</fencevalue>
+    </cliptype>
+
+    <cliptype idname="CLIP_ASSAULT">
+        <name>Aslt/Rifle Mag</name>
+        <name_future>Assault Powerpack</name_future> <!-- Liberal Overhaul -->
+        <ammo>30</ammo>
+        <fencevalue>8</fencevalue>
+    </cliptype>
+
+    <cliptype idname="CLIP_GASOLINE">
+        <name>Gas Tank</name>
+        <name_future>Hydrogen Fuel</name_future>
+        <ammo>3</ammo>
+        <fencevalue>2</fencevalue>
+    </cliptype>
+
+    <cliptype idname="CLIP_DRUM">
+        <name>MachinGun Drum</name>
+        <name_future>Chaingun Belt</name_future>
+        <ammo>100</ammo>
+        <fencevalue>25</fencevalue>
+    </cliptype>
+
+    <!-- Should not be necessary after changes are complete.
+    <cliptype idname="CLIP_MOLOTOV">
+        <name>Molotov Bomb</name>
+        <name_future>Molotov Bomb</name_future>
+        <ammo>1</ammo>
+        <fencevalue>2</fencevalue>
+    </cliptype>
+    -->
+
+    <cliptype idname="CLIP_BUCKSHOT">
+        <name>Shotgun Speedloader</name> <!-- Liberal Overhaul -->
+        <name_future>Shotgun Plas-loader</name_future>
+        <ammo>8</ammo>
+        <fencevalue>3</fencevalue>
+    </cliptype>
+	
+	<cliptype idname="CLIP_5.7"> <!-- Liberal Overhaul -->
+        <name>AP Mag</name>
+        <name_future>AP Slug Pack</name_future>
+        <ammo>20</ammo> <!-- P90 and Five SeveN both shoot the same round -->
+        <fencevalue>7</fencevalue>
+    </cliptype>
+	
+	<cliptype idname="CLIP_SNIPER"> <!-- Liberal Overhaul -->
+        <name>Sniper Mag</name>
+        <name_future>Gauss Battery</name_future>
+        <ammo>10</ammo>
+        <fencevalue>25</fencevalue>
+    </cliptype>
+	
+	<cliptype idname="CLIP_BATTLE"> <!-- Liberal Overhaul -->
+        <name>Battle Rifle Mag</name>
+        <name_future>Battle Powerpack</name_future>
+        <ammo>20</ammo>
+        <fencevalue>15</fencevalue>
+    </cliptype>
+	
+	<cliptype idname="CLIP_SAWNOFF"> <!-- Liberal Overhaul -->
+        <name>Sawn-off Shells</name>
+        <name_future>Sawn-off Plas-loader</name_future>
+        <ammo>2</ammo>
+        <fencevalue>3</fencevalue>
+    </cliptype>
+	
+	<cliptype idname="CLIP_SHOTGUN_DRUM"> <!-- Liberal Overhaul -->
+        <name>Heavy Shotgun Drum</name>
+        <name_future>Shotgun Plas-belt</name_future>
+        <ammo>20</ammo>
+        <fencevalue>25</fencevalue>
+    </cliptype>
+
+</clips>
