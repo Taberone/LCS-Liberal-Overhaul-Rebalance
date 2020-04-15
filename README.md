@@ -1,5 +1,5 @@
 # LCS-Liberal-Overhaul-Rebalance
-Liberal Overhaul/Rebalance Mod (Continuation of Liberal Additions)
+Liberal Overhaul/Rebalance Mod (Continuation of Liberal Additions) for LCS 4.12+ (Not for Terra Vitae, sorry!)
 
 Backup your Art folder before installing! Read the ModdingChanges.txt file!
 
