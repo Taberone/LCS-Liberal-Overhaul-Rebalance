@@ -1,4 +1,5 @@
 # LCS-Liberal-Overhaul-Rebalance
-Liberal Overhaul/Rebalance (Continuation of Liberal Additions)
+Liberal Overhaul/Rebalance Mod (Continuation of Liberal Additions)
+Backup your Art folder before installing!
 
 Description is WIP
