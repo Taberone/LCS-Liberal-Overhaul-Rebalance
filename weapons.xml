@@ -213,9 +213,9 @@
     </weapontype>
 
     <weapontype idname="WEAPON_SEMIPISTOL_45">
-        <name>Colt 1911</name>
+        <name>USP .45</name>
         <name_future>.45 Laser Pistol</name_future>
-        <shortname>1911</shortname>
+        <shortname>USP .45</shortname>
         <shortname_future>.45 Las.</shortname_future>
         <can_take_hostages>true</can_take_hostages>
         <threatening>true</threatening>
@@ -329,9 +329,9 @@
     </weapontype>
 
     <weapontype idname="WEAPON_AUTORIFLE_AK47">
-        <name>AK-47</name>
+        <name>AKM</name> <!-- Liberal Overhaul: Updated to be an AKM -->
         <name_future>P74 War Laser</name_future>
-        <shortname>AK-47</shortname>
+        <shortname>AKM</shortname> <!-- Liberal Overhaul: Updated to be an AKM -->
         <shortname_future>P74 War</shortname_future>
         <can_take_hostages>true</can_take_hostages>
         <threatening>true</threatening>
@@ -494,9 +494,9 @@
     </weapontype>
 
     <weapontype idname="WEAPON_CARBINE_M4">
-        <name>M4 Carbine</name>
+        <name>M4A1 Carbine</name> <!-- Liberal Overhaul: Slight name update -->
         <name_future>J4 Laser Carbine</name_future>
-        <shortname>M4</shortname>
+        <shortname>M4A1</shortname> <!-- Liberal Overhaul: Slight name update -->
         <shortname_future>J4 Laser</shortname_future>
         <can_take_hostages>true</can_take_hostages>
         <threatening>true</threatening>
@@ -539,9 +539,9 @@
     </weapontype>
 
     <weapontype idname="WEAPON_AUTORIFLE_M16">
-        <name>M16</name>
+        <name>M16A1</name> <!-- Liberal Overhaul: Slight name update -->
         <name_future>X15 Military Laser</name_future>
-        <shortname>M16</shortname>
+        <shortname>M16A1</shortname> <!-- Liberal Overhaul: Slight name update -->
         <shortname_future>X15 Full</shortname_future>
         <can_take_hostages>true</can_take_hostages>
         <threatening>true</threatening>
