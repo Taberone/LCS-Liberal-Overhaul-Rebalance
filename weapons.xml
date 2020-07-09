@@ -178,7 +178,7 @@
     <weapontype idname="WEAPON_REVOLVER_44">
         <name>.44 Redhawk</name>
         <name_future>.44 Heavy Slug Pistol</name_future>
-        <shortname>.44 Rev</shortname>
+        <shortname>.44 Mag</shortname>
         <shortname_future>.44 Slug</shortname_future>
         <can_take_hostages>true</can_take_hostages>
         <threatening>true</threatening>

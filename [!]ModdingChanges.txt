@@ -145,12 +145,12 @@ Weapon name changes:
 ---	
 Ammo Name Changes (Generic-ified ammo piles to accommodate for a variety of calibers/ammo capacities)
 ---
-	".38 Speedloader" ---> "Speedloader/Slug Loader" (Name/Future Name)
-	".44 Speedloader" ---> "Magnum Speedloader / Magnum Slug Loader" (Name/Future Name)
-	".45 Pistol Mag" ---> "Medium Pistol Mag / Powerpack" (Name/Future Name)
-	".50AE Pistol Mag" ---> "Heavy Pistol Mag / Powerpack" (Name/Future Name)
-	"9mm Pistol Mag" ---> "Light Pistol Mag / Powerpack" (Name/Future Name)
-	"9mm SMG Mag" ---> "SMG Mag / Powerpack"
+	".38 Speedloader" ---> "Revolver Speedloader"
+	".44 Speedloader" ---> "Magnum Speedloader
+	".45 Pistol Mag" ---> "Med. Pistol Mag"
+	".50AE Pistol Mag" ---> "Hvy. Pistol Mag
+	"9mm Pistol Mag" ---> "Lte Pistol Mag"
+	"9mm SMG Mag" ---> "SMG Mag"
 	"Shotgun Shells" ---> "Shotgun Speedloader / Shotgun Plas-loader" (Name/Future Name) (These exist)
 ---	
 Vehicles

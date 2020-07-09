@@ -14,7 +14,7 @@
     -->
 
     <cliptype idname="CLIP_38">
-        <name>Speedloader</name> <!-- Liberal Overhaul -->
+        <name>Revolver Speedloader</name> <!-- Liberal Overhaul -->
         <name_future>Slug Loader</name_future>
         <ammo>6</ammo>
         <fencevalue>2</fencevalue>
@@ -28,21 +28,21 @@
     </cliptype>
 
     <cliptype idname="CLIP_45">
-        <name>Medium Pistol Mag</name> <!-- Liberal Overhaul -->
-        <name_future>Medium Powerpack</name_future>
+        <name>Med. Pistol Mag</name> <!-- Liberal Overhaul -->
+        <name_future>Med. Powerpack</name_future>
         <ammo>12</ammo>
         <fencevalue>4</fencevalue>
     </cliptype>
 
     <cliptype idname="CLIP_50AE">
-        <name>Heavy Pistol Mag</name>  <!-- Liberal Overhaul -->
+        <name>Hvy. Pistol Mag</name>  <!-- Liberal Overhaul -->
         <name_future>Heavy Powerpack</name_future>
         <ammo>8</ammo>
         <fencevalue>3</fencevalue>
     </cliptype>
 
     <cliptype idname="CLIP_9">
-        <name>Light Pistol Mag</name> <!-- Liberal Overhaul -->
+        <name>Lte. Pistol Mag</name> <!-- Liberal Overhaul -->
         <name_future>Light Powerpack</name_future>
         <ammo>15</ammo>
         <fencevalue>4</fencevalue>
@@ -56,7 +56,7 @@
     </cliptype>
 
     <cliptype idname="CLIP_ASSAULT">
-        <name>Aslt/Rifle Mag</name>
+        <name>Aslt. Rifle Mag</name>
         <name_future>Assault Powerpack</name_future> <!-- Liberal Overhaul -->
         <ammo>30</ammo>
         <fencevalue>8</fencevalue>
@@ -86,7 +86,7 @@
     -->
 
     <cliptype idname="CLIP_BUCKSHOT">
-        <name>Shotgun Speedloader</name> <!-- Liberal Overhaul -->
+        <name>Shotgun Shells</name> <!-- Liberal Overhaul -->
         <name_future>Shotgun Plas-loader</name_future>
         <ammo>8</ammo>
         <fencevalue>3</fencevalue>
@@ -107,7 +107,7 @@
     </cliptype>
 	
 	<cliptype idname="CLIP_BATTLE"> <!-- Liberal Overhaul -->
-        <name>Battle Rifle Mag</name>
+        <name>Batl. Rifle Mag</name>
         <name_future>Battle Powerpack</name_future>
         <ammo>20</ammo>
         <fencevalue>15</fencevalue>
@@ -121,7 +121,7 @@
     </cliptype>
 	
 	<cliptype idname="CLIP_SHOTGUN_DRUM"> <!-- Liberal Overhaul -->
-        <name>Heavy Shotgun Drum</name>
+        <name>Heav. Shotgun Drum</name>
         <name_future>Shotgun Plas-belt</name_future>
         <ammo>20</ammo>
         <fencevalue>25</fencevalue>
