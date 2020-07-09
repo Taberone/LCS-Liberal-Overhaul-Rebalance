@@ -344,7 +344,7 @@
             <ranged>true</ranged>
             <attack_description>shoots at</attack_description>
             <skill>RIFLE</skill>
-            <ammotype>CLIP_ASSAULT</ammotype>
+            <ammotype>CLIP_AK</ammotype>
             <random_damage>35</random_damage>
             <fixed_damage>35</fixed_damage>
             <shoots>true</shoots>
@@ -1329,7 +1329,7 @@
             <ranged>true</ranged>
             <attack_description>shoots at</attack_description>
             <skill>SMG</skill>
-            <ammotype>CLIP_5.7</ammotype>
+            <ammotype>CLIP_57_SMG</ammotype>
             <random_damage>20</random_damage>
             <fixed_damage>15</fixed_damage>
             <shoots>true</shoots>
@@ -1368,7 +1368,7 @@
             <ranged>true</ranged>
             <attack_description>shoots at</attack_description>
             <skill>PISTOL</skill>
-            <ammotype>CLIP_5.7</ammotype>
+            <ammotype>CLIP_57</ammotype>
             <random_damage>20</random_damage>
             <fixed_damage>15</fixed_damage>
             <shoots>true</shoots>
@@ -1436,7 +1436,7 @@
     </weapontype>
 	
 	<weapontype idname="WEAPON_SNIPER">
-        <name>.30-06 Sniper Rifle</name>
+        <name>R93 Sniper Rifle</name>
         <name_future>X62 Gauss Rifle</name_future>
         <shortname>Sniper</shortname>
         <shortname_future>Gauss</shortname_future>
@@ -1490,7 +1490,7 @@
             <ranged>true</ranged>
             <attack_description>sprays bullets at</attack_description>
             <skill>PISTOL</skill>
-            <ammotype>CLIP_45</ammotype>
+            <ammotype>CLIP_SMG_45</ammotype>
             <random_damage>30</random_damage>
             <fixed_damage>20</fixed_damage>
             <shoots>true</shoots>
@@ -1529,7 +1529,7 @@
             <ranged>true</ranged>
             <attack_description>sprays bullets at</attack_description>
             <skill>PISTOL</skill>
-            <ammotype>CLIP_9</ammotype>
+            <ammotype>CLIP_SMG</ammotype>
             <random_damage>25</random_damage>
             <fixed_damage>20</fixed_damage>
             <shoots>true</shoots>
@@ -1569,7 +1569,7 @@
             <ranged>true</ranged>
             <attack_description>shoots at</attack_description>
             <skill>SMG</skill>
-            <ammotype>CLIP_SMG</ammotype>
+            <ammotype>CLIP_SMG_45</ammotype>
             <random_damage>35</random_damage>
             <fixed_damage>25</fixed_damage>
             <shoots>true</shoots>
@@ -1608,7 +1608,7 @@
             <ranged>true</ranged>
             <attack_description>shoots at</attack_description>
             <skill>SMG</skill>
-            <ammotype>CLIP_SMG</ammotype>
+            <ammotype>CLIP_SMG_45</ammotype>
             <random_damage>25</random_damage>
             <fixed_damage>15</fixed_damage>
             <shoots>true</shoots>
@@ -1647,7 +1647,7 @@
             <ranged>true</ranged>
             <attack_description>shoots at</attack_description>
             <skill>SMG</skill>
-            <ammotype>CLIP_SMG</ammotype>
+            <ammotype>CLIP_SMG_45</ammotype>
             <random_damage>30</random_damage>
             <fixed_damage>20</fixed_damage>
             <shoots>true</shoots>

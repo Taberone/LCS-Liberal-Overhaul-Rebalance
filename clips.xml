@@ -92,7 +92,9 @@
         <fencevalue>3</fencevalue>
     </cliptype>
 	
-	<cliptype idname="CLIP_5.7"> <!-- Liberal Overhaul -->
+	<!-- New weapons added by Liberal Overhaul and Rebalance -->
+	
+	<cliptype idname="CLIP_57"> <!-- Liberal Overhaul -->
         <name>5.7 Mag</name>
         <name_future>AP Slug Pack</name_future>
         <ammo>20</ammo> <!-- P90 and Five SeveN both shoot the same round -->
@@ -134,15 +136,15 @@
         <fencevalue>10</fencevalue>
     </cliptype>
 	
-	<cliptype idname="CLIP_P90"> <!-- Liberal Overhaul -->
+	<cliptype idname="CLIP_57_SMG"> <!-- Liberal Overhaul -->
         <name>P90 Mag</name>
         <name_future>AP-SMG Slug Pack</name_future>
         <ammo>50</ammo> <!-- P90 and Five SeveN both shoot the same round -->
         <fencevalue>7</fencevalue>
     </cliptype>
 	
-	<cliptype idname="CLIP_UMP45"> <!-- Liberal Overhaul -->
-        <name>45 SMG Mag</name>
+	<cliptype idname="CLIP_SMG_45"> <!-- Liberal Overhaul -->
+        <name>.45 SMG Mag</name>
         <name_future>H-SMG Powerpack</name_future>
         <ammo>30</ammo>
         <fencevalue>6</fencevalue>
