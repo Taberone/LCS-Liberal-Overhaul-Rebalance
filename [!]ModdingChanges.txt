@@ -7,7 +7,6 @@ GOALS AND PHILOSOPHIES:
 	6) More weapons
 ---
 Standardized weapon damage (Fixed/Random/Total) based on ammo type. These are a baseline.
-!!! TO DO: UPDATE THIS! AMMO GOT CHANGED! !!!
 ---
 		5.7: 15/20 (15-35, Ex. P90 and Five SeveN)
 		.38: 20/25 (20-45), Ex. .38 Revolver)
@@ -37,7 +36,6 @@ Standardized weapon damage (Fixed/Random/Total) based on ammo type. These are a 
 ---
 Standardized accuracy bonus/successive attack difficulty based on ammo type. These are a baseline.
 (Left = Accuracy Bonus / Right = Successive Attack Difficulty)
-!!! TO DO: UPDATE THIS! AMMO GOT CHANGED! !!!
 ---
 		5.7: 4 / 2 (Ex. P90 and Five SeveN)
 		.38: 3 / 3 (Ex. .38 Revolver)
@@ -140,10 +138,20 @@ Magazine Capacities
 Weapon name changes:
 ---
 		9mm pistol: Beretta 92
-		.45 Pistol: USP .45
+		.45 Pistol: Colt 1911
 		.38 Rev: .38 S&W
 		.44 Mag: .44 Redhawk
 		Shotgun: R870
+---	
+Ammo Name Changes (Generic-ified ammo piles to accommodate for a variety of calibers/ammo capacities)
+---
+	".38 Speedloader" ---> "Revolver Speedloader"
+	".44 Speedloader" ---> "Magnum Speedloader
+	".45 Pistol Mag" ---> "Med. Pistol Mag"
+	".50AE Pistol Mag" ---> "Hvy. Pistol Mag
+	"9mm Pistol Mag" ---> "Lte Pistol Mag"
+	"9mm SMG Mag" ---> "SMG Mag"
+	"Shotgun Shells" ---> "Shotgun Speedloader / Shotgun Plas-loader" (Name/Future Name) (These exist)
 ---	
 Vehicles
 ---
@@ -192,7 +200,6 @@ Other changes
 		Maul
 ---
 New Clips
-!!! TO DO: UPDATE THIS! AMMO GOT CHANGED! !!!
 ---
 	AP Mag (5.7x28mm): 
 		P90/Five SeveN
@@ -207,7 +214,6 @@ New Clips
 		AA-12
 ---
 New Weapons
-!!! TO DO: UPDATE THIS! AMMO GOT CHANGED! !!!
 ---
 	SUBMACHINE GUNS
 		TDI Vector (.45 SMG / uses SMG ammo / Burst-capable, 2x)
@@ -389,7 +395,6 @@ THEMES
 ---	
 WIP: CONSERVATIVE ARMORY AND SKILL EXPANSION
 New weapons are used by NPCs. Some NPCs can spawn with alternative armors.
-!!! TO DO: UPDATE THIS! AMMO GOT CHANGED! !!!
 ---
 	Police Officer:
 		Can occasionally be found wearing Police Uniform instead of Police Armor
@@ -526,7 +531,6 @@ WIP: ARMOR
 	Expanded Appropriate Weapons for Armor now that Conservatives use more guns.
 ---	
 WIP: SPENDING EXPANSION
-!!! TO DO: UPDATE THIS! AMMO GOT CHANGED! !!!
 ---
 	Pawnshop:
 		Fullscreen interface
@@ -656,14 +660,5 @@ Accuracy rebalance for close-quarters combat (Smaller guns more accurate, bigger
 	44, 45: +1
 	M249: -1
 	Flamethrower: +5
-	
-Ammo Name Changes (Generic-ified ammo piles to accommodate for a variety of calibers/ammo capacities)
-	".38 Speedloader" ---> "Revolver Speedloader"
-	".44 Speedloader" ---> "Magnum Speedloader
-	".45 Pistol Mag" ---> "Med. Pistol Mag"
-	".50AE Pistol Mag" ---> "Hvy. Pistol Mag
-	"9mm Pistol Mag" ---> "Lte Pistol Mag"
-	"9mm SMG Mag" ---> "SMG Mag"
-	"Shotgun Shells" ---> "Shotgun Speedloader / Shotgun Plas-loader" (Name/Future Name) (These exist)
 /// OLD and ARCHIVED ABOVE: IGNORE THAT
 ---

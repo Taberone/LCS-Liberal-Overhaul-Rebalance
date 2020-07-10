@@ -213,9 +213,9 @@
     </weapontype>
 
     <weapontype idname="WEAPON_SEMIPISTOL_45">
-        <name>USP .45</name>
+        <name>Colt 1911</name>
         <name_future>.45 Laser Pistol</name_future>
-        <shortname>USP .45</shortname>
+        <shortname>1911</shortname>
         <shortname_future>.45 Las.</shortname_future>
         <can_take_hostages>true</can_take_hostages>
         <threatening>true</threatening>
@@ -329,9 +329,9 @@
     </weapontype>
 
     <weapontype idname="WEAPON_AUTORIFLE_AK47">
-        <name>AKM</name> <!-- Liberal Overhaul: Updated to be an AKM -->
+        <name>AK-47</name>
         <name_future>P74 War Laser</name_future>
-        <shortname>AKM</shortname> <!-- Liberal Overhaul: Updated to be an AKM -->
+        <shortname>AK-47</shortname>
         <shortname_future>P74 War</shortname_future>
         <can_take_hostages>true</can_take_hostages>
         <threatening>true</threatening>
@@ -344,7 +344,7 @@
             <ranged>true</ranged>
             <attack_description>shoots at</attack_description>
             <skill>RIFLE</skill>
-            <ammotype>CLIP_AK</ammotype>
+            <ammotype>CLIP_ASSAULT</ammotype>
             <random_damage>35</random_damage>
             <fixed_damage>35</fixed_damage>
             <shoots>true</shoots>
@@ -494,9 +494,9 @@
     </weapontype>
 
     <weapontype idname="WEAPON_CARBINE_M4">
-        <name>M4A1 Carbine</name> <!-- Liberal Overhaul: Slight name update -->
+        <name>M4 Carbine</name>
         <name_future>J4 Laser Carbine</name_future>
-        <shortname>M4A1</shortname> <!-- Liberal Overhaul: Slight name update -->
+        <shortname>M4</shortname>
         <shortname_future>J4 Laser</shortname_future>
         <can_take_hostages>true</can_take_hostages>
         <threatening>true</threatening>
@@ -539,9 +539,9 @@
     </weapontype>
 
     <weapontype idname="WEAPON_AUTORIFLE_M16">
-        <name>M16A1</name> <!-- Liberal Overhaul: Slight name update -->
+        <name>M16</name>
         <name_future>X15 Military Laser</name_future>
-        <shortname>M16A1</shortname> <!-- Liberal Overhaul: Slight name update -->
+        <shortname>M16</shortname>
         <shortname_future>X15 Full</shortname_future>
         <can_take_hostages>true</can_take_hostages>
         <threatening>true</threatening>
@@ -1329,7 +1329,7 @@
             <ranged>true</ranged>
             <attack_description>shoots at</attack_description>
             <skill>SMG</skill>
-            <ammotype>CLIP_57_SMG</ammotype>
+            <ammotype>CLIP_5.7</ammotype>
             <random_damage>20</random_damage>
             <fixed_damage>15</fixed_damage>
             <shoots>true</shoots>
@@ -1368,7 +1368,7 @@
             <ranged>true</ranged>
             <attack_description>shoots at</attack_description>
             <skill>PISTOL</skill>
-            <ammotype>CLIP_57</ammotype>
+            <ammotype>CLIP_5.7</ammotype>
             <random_damage>20</random_damage>
             <fixed_damage>15</fixed_damage>
             <shoots>true</shoots>
@@ -1436,7 +1436,7 @@
     </weapontype>
 	
 	<weapontype idname="WEAPON_SNIPER">
-        <name>R93 Sniper Rifle</name>
+        <name>.30-06 Sniper Rifle</name>
         <name_future>X62 Gauss Rifle</name_future>
         <shortname>Sniper</shortname>
         <shortname_future>Gauss</shortname_future>
@@ -1490,7 +1490,7 @@
             <ranged>true</ranged>
             <attack_description>sprays bullets at</attack_description>
             <skill>PISTOL</skill>
-            <ammotype>CLIP_SMG_45</ammotype>
+            <ammotype>CLIP_45</ammotype>
             <random_damage>30</random_damage>
             <fixed_damage>20</fixed_damage>
             <shoots>true</shoots>
@@ -1529,7 +1529,7 @@
             <ranged>true</ranged>
             <attack_description>sprays bullets at</attack_description>
             <skill>PISTOL</skill>
-            <ammotype>CLIP_SMG</ammotype>
+            <ammotype>CLIP_9</ammotype>
             <random_damage>25</random_damage>
             <fixed_damage>20</fixed_damage>
             <shoots>true</shoots>
@@ -1569,7 +1569,7 @@
             <ranged>true</ranged>
             <attack_description>shoots at</attack_description>
             <skill>SMG</skill>
-            <ammotype>CLIP_SMG_45</ammotype>
+            <ammotype>CLIP_SMG</ammotype>
             <random_damage>35</random_damage>
             <fixed_damage>25</fixed_damage>
             <shoots>true</shoots>
@@ -1608,7 +1608,7 @@
             <ranged>true</ranged>
             <attack_description>shoots at</attack_description>
             <skill>SMG</skill>
-            <ammotype>CLIP_SMG_45</ammotype>
+            <ammotype>CLIP_SMG</ammotype>
             <random_damage>25</random_damage>
             <fixed_damage>15</fixed_damage>
             <shoots>true</shoots>
@@ -1647,7 +1647,7 @@
             <ranged>true</ranged>
             <attack_description>shoots at</attack_description>
             <skill>SMG</skill>
-            <ammotype>CLIP_SMG_45</ammotype>
+            <ammotype>CLIP_SMG</ammotype>
             <random_damage>30</random_damage>
             <fixed_damage>20</fixed_damage>
             <shoots>true</shoots>
