@@ -49,7 +49,7 @@
     </cliptype>
 
     <cliptype idname="CLIP_SMG">
-        <name>SMG Mag</name> <!-- Liberal Overhaul -->
+        <name>Lte. SMG Mag</name> <!-- Liberal Overhaul -->
         <name_future>SMG Powerpack</name_future>
         <ammo>30</ammo> <!-- Liberal Rebalance -->
         <fencevalue>5</fencevalue>
@@ -92,6 +92,8 @@
         <fencevalue>3</fencevalue>
     </cliptype>
 	
+<!-- Liberal Overhaul/Rebalance "Clips" -->
+	
 	<cliptype idname="CLIP_5.7"> <!-- Liberal Overhaul -->
         <name>AP Mag</name>
         <name_future>AP Slug Pack</name_future>
@@ -99,32 +101,39 @@
         <fencevalue>7</fencevalue>
     </cliptype>
 	
-	<cliptype idname="CLIP_SNIPER"> <!-- Liberal Overhaul -->
+	<cliptype idname="CLIP_SNIPER">
         <name>Sniper Mag</name>
         <name_future>Gauss Battery</name_future>
         <ammo>10</ammo>
         <fencevalue>25</fencevalue>
     </cliptype>
 	
-	<cliptype idname="CLIP_BATTLE"> <!-- Liberal Overhaul -->
+	<cliptype idname="CLIP_BATTLE">
         <name>Batl. Rifle Mag</name>
         <name_future>Battle Powerpack</name_future>
         <ammo>20</ammo>
         <fencevalue>15</fencevalue>
     </cliptype>
 	
-	<cliptype idname="CLIP_SAWNOFF"> <!-- Liberal Overhaul -->
+	<cliptype idname="CLIP_SAWNOFF">
         <name>Sawn-off Shells</name>
         <name_future>Sawn-off Plas-loader</name_future>
         <ammo>2</ammo>
         <fencevalue>3</fencevalue>
     </cliptype>
 	
-	<cliptype idname="CLIP_SHOTGUN_DRUM"> <!-- Liberal Overhaul -->
+	<cliptype idname="CLIP_SHOTGUN_DRUM">
         <name>Heav. Shotgun Drum</name>
         <name_future>Shotgun Plas-belt</name_future>
         <ammo>20</ammo>
         <fencevalue>25</fencevalue>
+    </cliptype>
+	
+	<cliptype idname="CLIP_SMG_MED">
+        <name>Med. SMG Mag</name>
+        <name_future>SMG Powerpack</name_future>
+        <ammo>30</ammo>
+        <fencevalue>7</fencevalue>
     </cliptype>
 
 </clips>

@@ -213,7 +213,7 @@
     </weapontype>
 
     <weapontype idname="WEAPON_SEMIPISTOL_45">
-        <name>Colt 1911</name>
+        <name>USP .45</name>
         <name_future>.45 Laser Pistol</name_future>
         <shortname>1911</shortname>
         <shortname_future>.45 Las.</shortname_future>
@@ -1315,7 +1315,7 @@
 	
 	
 	<weapontype idname="WEAPON_SMG_P90">
-        <name>P90 SMG</name>
+        <name>AP SMG</name>
         <name_future>Tokyo King SMG</name_future>
         <shortname>P90</shortname>
         <shortname_future>King SMG</shortname_future>
@@ -1355,7 +1355,7 @@
 	
 	<weapontype idname="WEAPON_FIVESEVEN">     
         <name>FN Five SeveN</name>
-        <name_future>5.7 Needle Pistol</name_future>
+        <name_future>5.7 Needler</name_future>
         <shortname>FN 5.7</shortname>
         <shortname_future>Needler</shortname_future>
         <can_take_hostages>true</can_take_hostages>
@@ -1436,7 +1436,7 @@
     </weapontype>
 	
 	<weapontype idname="WEAPON_SNIPER">
-        <name>.30-06 Sniper Rifle</name>
+        <name>R93 Sniper Rifle</name>
         <name_future>X62 Gauss Rifle</name_future>
         <shortname>Sniper</shortname>
         <shortname_future>Gauss</shortname_future>
@@ -1555,7 +1555,7 @@
 	
 	
 	<weapontype idname="WEAPON_VECTOR">
-        <name>TDi Vector</name>
+        <name>TDi Vector SMG</name>
         <name_future>Shredder SMG</name_future>
         <shortname>Vector</shortname>
         <shortname_future>Shredder</shortname_future>
@@ -1569,7 +1569,7 @@
             <ranged>true</ranged>
             <attack_description>shoots at</attack_description>
             <skill>SMG</skill>
-            <ammotype>CLIP_SMG</ammotype>
+            <ammotype>CLIP_SMG_MED</ammotype>
             <random_damage>35</random_damage>
             <fixed_damage>25</fixed_damage>
             <shoots>true</shoots>
@@ -1608,7 +1608,7 @@
             <ranged>true</ranged>
             <attack_description>shoots at</attack_description>
             <skill>SMG</skill>
-            <ammotype>CLIP_SMG</ammotype>
+            <ammotype>CLIP_SMG_MED</ammotype>
             <random_damage>25</random_damage>
             <fixed_damage>15</fixed_damage>
             <shoots>true</shoots>
@@ -1647,7 +1647,7 @@
             <ranged>true</ranged>
             <attack_description>shoots at</attack_description>
             <skill>SMG</skill>
-            <ammotype>CLIP_SMG</ammotype>
+            <ammotype>CLIP_SMG_MED</ammotype>
             <random_damage>30</random_damage>
             <fixed_damage>20</fixed_damage>
             <shoots>true</shoots>

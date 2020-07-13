@@ -138,7 +138,7 @@ Magazine Capacities
 Weapon name changes:
 ---
 		9mm pistol: Beretta 92
-		.45 Pistol: Colt 1911
+		.45 Pistol: USP .45
 		.38 Rev: .38 S&W
 		.44 Mag: .44 Redhawk
 		Shotgun: R870
@@ -149,9 +149,8 @@ Ammo Name Changes (Generic-ified ammo piles to accommodate for a variety of cali
 	".44 Speedloader" ---> "Magnum Speedloader
 	".45 Pistol Mag" ---> "Med. Pistol Mag"
 	".50AE Pistol Mag" ---> "Hvy. Pistol Mag
-	"9mm Pistol Mag" ---> "Lte Pistol Mag"
-	"9mm SMG Mag" ---> "SMG Mag"
-	"Shotgun Shells" ---> "Shotgun Speedloader / Shotgun Plas-loader" (Name/Future Name) (These exist)
+	"9mm Pistol Mag" ---> "Lte. Pistol Mag"
+	"9mm SMG Mag" ---> "Lte. SMG Mag"
 ---	
 Vehicles
 ---
@@ -212,29 +211,34 @@ New Clips
 		Super Shorty
 	Shotgun Drum ("Heavy Shotgun Drum"):
 		AA-12
+	Medium SMG Mag:
+		Vector
+		Tommygun
+		UMP45
+		
 ---
 New Weapons
 ---
 	SUBMACHINE GUNS
-		TDI Vector (.45 SMG / uses SMG ammo / Burst-capable, 2x)
+		TDI Vector (.45 SMG / uses Med. SMG ammo / Burst-capable, 2x)
 			25 Fixed / 35 Random Damage (25-60 per shot)
 			Accuracy Bonus: 4
 			Successive Attack Difficulty: 4
 			Armor Piercing: 4
 		
-		Tommy Gun (.45 SMG / uses SMG ammo / Burst-capable, 5x)
+		Tommy Gun (.45 SMG / uses Med. SMG ammo / Burst-capable, 5x)
 			15 Fixed / 25 Random Damage (15-40 per shot)
 			Accuracy Bonus: 3
 			Successive Attack Difficulty: 5
 			Armor Piercing: 4
 		
-		UMP45 (.45 SMG / uses SMG ammo / Burst-capable, 3x)
+		UMP45 (.45 SMG / uses Med. SMG ammo / Burst-capable, 3x)
 			20 Fixed / 30 Random Damage (20-50 per shot)
 			Accuracy Bonus: 3
 			Successive Attack Difficulty: 4
 			Armor Piercing: 4
 			
-		MP40 (9mm SMG / uses SMG ammo / Burst-capable, 3x)
+		MP40 (9mm SMG / uses Light SMG ammo / Burst-capable, 3x)
 			20 Fixed / 25 Random Damage (20-45 per shot)
 			Accuracy Bonus: 3
 			Successive Attack Difficulty: 4
@@ -246,7 +250,7 @@ New Weapons
 			Successive Attack Difficulty: 2
 			Armor Piercing: 7
 		
-		PPSH (7.62x25 SMG / uses SMG ammo / Burst-capable, 5x)
+		PPSH (7.62x25 SMG / uses Light SMG ammo / Burst-capable, 5x)
 			25 Fixed / 35 Random Damage (25-60 per shot)
 			Accuracy Bonus: 5
 			Successive Attack Difficulty: 4
@@ -256,13 +260,13 @@ New Weapons
 		Five SeveN (5.7x28 Pistol / uses AP ammo)
 			15 Fixed / 20 Random Damage (15-35)
 		
-		MAC-10 (.45 Machine Pistol / uses .45 ammo / Burst-capable, 5x / Custom Attack)
+		MAC-10 (.45 Machine Pistol / uses Med. Pistol ammo / Burst-capable, 5x / Custom Attack)
 			20 Fixed / 30 Random Damage (20-50 per shot)
 			Accuracy Bonus: 2
 			Successive Attack Difficulty: 6
 			Armor Piercing: 4
 			
-		TEC-9 (9mm Machine Pistol / uses 9mm ammo / Burst-capable, 4x / Custom Attack)
+		TEC-9 (9mm Machine Pistol / uses Light Pistol ammo / Burst-capable, 4x / Custom Attack)
 			20 Fixed / 25 Random Damage (20-45 per shot)
 			Accuracy Bonus: 3
 			Successive Attack Difficulty: 5
@@ -319,7 +323,7 @@ New Weapons
 			Successive Attack Difficulty: 8
 			Accuracy Bonus: -5
 			
-		Sniper Rifle (.30-06 Rifle / Uses Sniper ammo / Custom Attack)
+		R93 Sniper Rifle (.300 Rifle / Uses Sniper ammo / Custom Attack)
 			40 Fixed / 40 Random Damage (40-80 Damage)
 			Armor Piercing: 8
 			Accuracy Bonus: -6
