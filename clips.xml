@@ -128,12 +128,5 @@
         <ammo>20</ammo>
         <fencevalue>25</fencevalue>
     </cliptype>
-	
-	<cliptype idname="CLIP_SMG_MED">
-        <name>.45 SMG Mag</name>
-        <name_future>SMG Powerpack</name_future>
-        <ammo>30</ammo>
-        <fencevalue>7</fencevalue>
-    </cliptype>
 
 </clips>
