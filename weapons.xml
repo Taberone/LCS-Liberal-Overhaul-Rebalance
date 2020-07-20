@@ -1498,7 +1498,7 @@
             <damages_armor>true</damages_armor>
             <armorpiercing>4</armorpiercing>
 			<accuracy_bonus>2</accuracy_bonus>
-			<number_attacks>5</number_attacks>
+			<number_attacks>3</number_attacks>
 			<successive_attacks_difficulty>6</successive_attacks_difficulty> <!-- .45 Recoil + massive RoF -->
         </attack>
         <attack>
@@ -1537,7 +1537,7 @@
             <damages_armor>true</damages_armor>
             <armorpiercing>4</armorpiercing>
 			<accuracy_bonus>3</accuracy_bonus> <!-- Orig value: 0 -->
-			<number_attacks>4</number_attacks>
+			<number_attacks>3</number_attacks>
 			<successive_attacks_difficulty>5</successive_attacks_difficulty>
         </attack>
         <attack>
@@ -1569,7 +1569,7 @@
             <ranged>true</ranged>
             <attack_description>shoots at</attack_description>
             <skill>SMG</skill>
-            <ammotype>CLIP_SMG_MED</ammotype>
+            <ammotype>CLIP_SMG</ammotype>
             <random_damage>35</random_damage>
             <fixed_damage>25</fixed_damage>
             <shoots>true</shoots>
@@ -1608,7 +1608,7 @@
             <ranged>true</ranged>
             <attack_description>shoots at</attack_description>
             <skill>SMG</skill>
-            <ammotype>CLIP_SMG_MED</ammotype>
+            <ammotype>CLIP_SMG</ammotype>
             <random_damage>25</random_damage>
             <fixed_damage>15</fixed_damage>
             <shoots>true</shoots>
@@ -1647,7 +1647,7 @@
             <ranged>true</ranged>
             <attack_description>shoots at</attack_description>
             <skill>SMG</skill>
-            <ammotype>CLIP_SMG_MED</ammotype>
+            <ammotype>CLIP_SMG</ammotype>
             <random_damage>30</random_damage>
             <fixed_damage>20</fixed_damage>
             <shoots>true</shoots>
@@ -1725,7 +1725,7 @@
             <ranged>true</ranged>
             <attack_description>shoots at</attack_description>
             <skill>SMG</skill>
-            <ammotype>CLIP_SMG_MED</ammotype>
+            <ammotype>CLIP_SMG</ammotype>
             <random_damage>35</random_damage>
             <fixed_damage>25</fixed_damage>
             <shoots>true</shoots>
