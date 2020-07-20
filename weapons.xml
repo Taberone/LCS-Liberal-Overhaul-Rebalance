@@ -139,9 +139,9 @@
     </weapontype>
 
     <weapontype idname="WEAPON_REVOLVER_38">
-        <name>.38 SW</name>
+        <name>.38 Revolver</name>
         <name_future>.38 Slug Pistol</name_future>
-        <shortname>.38 SW</shortname>
+        <shortname>.38 Rev</shortname>
         <shortname_future>.38 Slug</shortname_future>
         <can_take_hostages>true</can_take_hostages>
         <threatening>true</threatening>
@@ -176,7 +176,7 @@
     </weapontype>
 
     <weapontype idname="WEAPON_REVOLVER_44">
-        <name>.44 Redhawk</name>
+        <name>.44 Magnum</name>
         <name_future>.44 Heavy Slug Pistol</name_future>
         <shortname>.44 Mag</shortname>
         <shortname_future>.44 Slug</shortname_future>
@@ -213,9 +213,9 @@
     </weapontype>
 
     <weapontype idname="WEAPON_SEMIPISTOL_45">
-        <name>USP .45</name>
+        <name>.45 Semiauto</name>
         <name_future>.45 Laser Pistol</name_future>
-        <shortname>1911</shortname>
+        <shortname>.45 Semi.</shortname>
         <shortname_future>.45 Las.</shortname_future>
         <can_take_hostages>true</can_take_hostages>
         <threatening>true</threatening>
@@ -250,9 +250,9 @@
     </weapontype>
 
     <weapontype idname="WEAPON_SEMIPISTOL_9MM">
-        <name>Beretta 92</name>
+        <name>9mm Semiauto</name>
         <name_future>9mm Laser Pistol</name_future>
-        <shortname>B92.</shortname>
+        <shortname>9mm Semi.</shortname>
         <shortname_future>9mm Las.</shortname_future>
         <can_take_hostages>true</can_take_hostages>
         <threatening>true</threatening>
@@ -699,9 +699,9 @@
     </weapontype>
 
     <weapontype idname="WEAPON_SHOTGUN_PUMP">
-        <name>R870 Shotgun</name>
+        <name>Shotgun</name>
         <name_future>Plasma Burstgun</name_future>
-        <shortname>R870</shortname>
+        <shortname>Shotgun</shortname>
         <shortname_future>Burstgun</shortname_future>
         <can_take_hostages>true</can_take_hostages>
         <threatening>true</threatening>
@@ -1315,7 +1315,7 @@
 	
 	
 	<weapontype idname="WEAPON_SMG_P90">
-        <name>AP SMG</name>
+        <name>P90 SMG</name>
         <name_future>Tokyo King SMG</name_future>
         <shortname>P90</shortname>
         <shortname_future>King SMG</shortname_future>
@@ -1354,9 +1354,9 @@
     </weapontype>
 	
 	<weapontype idname="WEAPON_FIVESEVEN">     
-        <name>FN Five SeveN</name>
+        <name>5.7 Pistol</name>
         <name_future>5.7 Needler</name_future>
-        <shortname>FN 5.7</shortname>
+        <shortname>5.7 Semi.</shortname>
         <shortname_future>Needler</shortname_future>
         <can_take_hostages>true</can_take_hostages>
         <threatening>true</threatening>
@@ -1436,7 +1436,7 @@
     </weapontype>
 	
 	<weapontype idname="WEAPON_SNIPER">
-        <name>R93 Sniper Rifle</name>
+        <name>.30-06 Sniper Rifle</name>
         <name_future>X62 Gauss Rifle</name_future>
         <shortname>Sniper</shortname>
         <shortname_future>Gauss</shortname_future>
@@ -1476,7 +1476,7 @@
 	
 	
 	<weapontype idname="WEAPON_AUTOPISTOL_45">
-        <name>MAC-10</name>
+        <name>MAC-10 Machine Pistol</name>
         <name_future>Y2011 AutoLaser</name_future>
         <shortname>MAC-10</shortname>
         <shortname_future>AutoLaser</shortname_future>
@@ -1515,7 +1515,7 @@
     </weapontype>
 	
 	<weapontype idname="WEAPON_AUTOPISTOL_9MM">
-        <name>TEC-9</name>
+        <name>TEC-9 Machine Pistol</name>
         <name_future>93GH Autopistol</name_future>
         <shortname>TEC-9</shortname>
         <shortname_future>93GH Auto</shortname_future>
@@ -1725,7 +1725,7 @@
             <ranged>true</ranged>
             <attack_description>shoots at</attack_description>
             <skill>SMG</skill>
-            <ammotype>CLIP_SMG</ammotype>
+            <ammotype>CLIP_SMG_MED</ammotype>
             <random_damage>35</random_damage>
             <fixed_damage>25</fixed_damage>
             <shoots>true</shoots>

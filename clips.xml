@@ -14,44 +14,44 @@
     -->
 
     <cliptype idname="CLIP_38">
-        <name>Revolver Speedloader</name> <!-- Liberal Overhaul -->
-        <name_future>Slug Loader</name_future>
+        <name>.38 Speedloader</name>
+        <name_future>.38 Slug Mag</name_future>
         <ammo>6</ammo>
         <fencevalue>2</fencevalue>
     </cliptype>
 
     <cliptype idname="CLIP_44">
-        <name>Magnum Speedloader</name> <!-- Liberal Overhaul -->
-        <name_future>Magnum Slug Loader</name_future>
+        <name>.44 Speedloader</name>
+        <name_future>.44 Heavy Slug Mag</name_future>
         <ammo>6</ammo>
         <fencevalue>3</fencevalue>
     </cliptype>
 
     <cliptype idname="CLIP_45">
-        <name>Med. Pistol Mag</name> <!-- Liberal Overhaul -->
-        <name_future>Med. Powerpack</name_future>
-        <ammo>12</ammo>
+        <name>.45 Pistol Mag</name>
+        <name_future>.45 Powerpack</name_future>
+        <ammo>12</ammo> <!-- Liberal Overhaul: Decrease mag size to 12 -->
         <fencevalue>4</fencevalue>
     </cliptype>
 
     <cliptype idname="CLIP_50AE">
-        <name>Hvy. Pistol Mag</name>  <!-- Liberal Overhaul -->
-        <name_future>Heavy Powerpack</name_future>
-        <ammo>8</ammo>
+        <name>.50AE Pistol Mag</name>
+        <name_future>.50AE Pistol Mag</name_future>
+        <ammo>8</ammo> <!-- Liberal Overhaul: Decrease mag size to 8 -->
         <fencevalue>3</fencevalue>
     </cliptype>
 
     <cliptype idname="CLIP_9">
-        <name>Lte. Pistol Mag</name> <!-- Liberal Overhaul -->
-        <name_future>Light Powerpack</name_future>
+        <name>9mm Pistol Mag</name>
+        <name_future>9mm Powerpack</name_future>
         <ammo>15</ammo>
         <fencevalue>4</fencevalue>
     </cliptype>
 
     <cliptype idname="CLIP_SMG">
-        <name>Lte. SMG Mag</name> <!-- Liberal Overhaul -->
+        <name>9mm SMG Mag</name>
         <name_future>SMG Powerpack</name_future>
-        <ammo>30</ammo> <!-- Liberal Rebalance -->
+        <ammo>30</ammo> <!-- Liberal Overhaul: Increase Mag size to 30 -->
         <fencevalue>5</fencevalue>
     </cliptype>
 
@@ -95,7 +95,7 @@
 <!-- Liberal Overhaul/Rebalance "Clips" -->
 	
 	<cliptype idname="CLIP_5.7"> <!-- Liberal Overhaul -->
-        <name>AP Mag</name>
+        <name>5.7 Mag</name>
         <name_future>AP Slug Pack</name_future>
         <ammo>20</ammo> <!-- P90 and Five SeveN both shoot the same round -->
         <fencevalue>7</fencevalue>
@@ -109,7 +109,7 @@
     </cliptype>
 	
 	<cliptype idname="CLIP_BATTLE">
-        <name>Batl. Rifle Mag</name>
+        <name>Batl. Mag</name>
         <name_future>Battle Powerpack</name_future>
         <ammo>20</ammo>
         <fencevalue>15</fencevalue>
@@ -123,14 +123,14 @@
     </cliptype>
 	
 	<cliptype idname="CLIP_SHOTGUN_DRUM">
-        <name>Heav. Shotgun Drum</name>
+        <name>AA-12 Drum</name>
         <name_future>Shotgun Plas-belt</name_future>
         <ammo>20</ammo>
         <fencevalue>25</fencevalue>
     </cliptype>
 	
 	<cliptype idname="CLIP_SMG_MED">
-        <name>Med. SMG Mag</name>
+        <name>.45 SMG Mag</name>
         <name_future>SMG Powerpack</name_future>
         <ammo>30</ammo>
         <fencevalue>7</fencevalue>
