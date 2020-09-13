@@ -1329,7 +1329,7 @@
             <ranged>true</ranged>
             <attack_description>shoots at</attack_description>
             <skill>SMG</skill>
-            <ammotype>CLIP_5.7</ammotype>
+            <ammotype>CLIP_P90</ammotype>
             <random_damage>20</random_damage>
             <fixed_damage>15</fixed_damage>
             <shoots>true</shoots>

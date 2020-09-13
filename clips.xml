@@ -97,7 +97,14 @@
 	<cliptype idname="CLIP_5.7"> <!-- Liberal Overhaul -->
         <name>5.7 Mag</name>
         <name_future>AP Slug Pack</name_future>
-        <ammo>20</ammo> <!-- P90 and Five SeveN both shoot the same round -->
+        <ammo>20</ammo>
+        <fencevalue>6</fencevalue>
+    </cliptype>
+	
+	<cliptype idname="CLIP_P90"> <!-- Liberal Overhaul -->
+        <name>P90 Mag</name>
+        <name_future>AP Slug Pack</name_future>
+        <ammo>50</ammo>
         <fencevalue>7</fencevalue>
     </cliptype>
 	

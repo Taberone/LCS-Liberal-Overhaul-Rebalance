@@ -201,7 +201,9 @@ Other changes
 New Clips
 ---
 	5.7 Mag (5.7x28mm): 
-		P90/Five SeveN
+		Five SeveN
+	P90 Mag (5.7x28mm)
+		P90
 	Sniper Rifle Mag (.30-06):
 		Sniper Rifle 
 	Battle Rifle Mag (7.62x51):
