@@ -103,7 +103,7 @@
 	
 	<cliptype idname="CLIP_P90"> <!-- Liberal Overhaul -->
         <name>P90 Mag</name>
-        <name_future>AP Slug Pack</name_future>
+        <name_future>AP Power Pack</name_future>
         <ammo>50</ammo>
         <fencevalue>7</fencevalue>
     </cliptype>
