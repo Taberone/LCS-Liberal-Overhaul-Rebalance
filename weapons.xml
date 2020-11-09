@@ -1313,6 +1313,32 @@
         </attack>
     </weapontype>
 	
+	<weapontype idname="WEAPON_SPADE">
+        <name>Trench Spade</name>
+        <name_future>Magneto-Spade</name_future>
+        <shortname>Spade</shortname>
+        <shortname_future>Magneto-Spade</shortname_future>
+        <can_take_hostages>true</can_take_hostages>
+        <threatening>true</threatening>
+        <fencevalue>0</fencevalue>
+        <bashstrengthmod>200</bashstrengthmod>
+        <size>5</size>
+        <attack>
+            <priority>1</priority>
+            <attack_description>swings at</attack_description>
+            <strength_min>1</strength_min>
+            <strength_max>6</strength_max>
+            <skill>AXE</skill>
+            <random_damage>35</random_damage>
+            <fixed_damage>10</fixed_damage>
+            <cuts>true</cuts>
+            <bleeding>true</bleeding>
+            <damages_armor>true</damages_armor>
+            <armorpiercing>7</armorpiercing>
+            <severtype>CLEAN</severtype>
+        </attack>
+    </weapontype>
+	
 	
 	<weapontype idname="WEAPON_SMG_P90">
         <name>P90 SMG</name>

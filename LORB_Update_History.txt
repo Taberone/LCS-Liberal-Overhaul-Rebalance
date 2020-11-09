@@ -1,9 +1,6 @@
-SEPTEMBER 12
-
-CLIP_5.7 fencevalue changed to 6
-
-CLIP_P90 added (50-round mag)
-P90 uses CLIP_P90
+OCTOBER 28
+Trench Spade added
+Trench Spade added to Soldiers
 
 ---
 TO DO:
@@ -11,6 +8,7 @@ TO DO:
 Possibly cut down on .45 SMG variety (Vector/UMP-45/Tommy Gun)
 Add Automag Pistol (.44 Magnum Ammo) to NPCs/Shops/Dealers
 Add Grizzy or Wildey Pistol (.50 Pistol Ammo) to NPCs/Shops/Dealers
+Add Spade/E-Tool to more NPCs/Shops/Dealers
 
 CLIP_P90:
 Add to Armsdealer.xml

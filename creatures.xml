@@ -1340,6 +1340,7 @@ Elements marked as hardcoded may have their values overridden by the game.
         </weapon>
 		<weapon>WEAPON_TOMAHAWK</weapon> <!--- Liberal Overhaul/Rebalance --->
 		<weapon>WEAPON_COMBATKNIFE</weapon> <!--- Liberal Overhaul/Rebalance --->
+		<weapon>WEAPON_SPADE</weapon> <!--- Liberal Overhaul/Rebalance --->
         <armor>ARMOR_ARMYARMOR</armor> 
 		<armor>ARMOR_MILITARY</armor> <!--- Liberal Overhaul/Rebalance --->
         <age>YOUNGADULT</age>

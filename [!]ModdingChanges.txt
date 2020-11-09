@@ -9,11 +9,11 @@ GOALS AND PHILOSOPHIES:
 Standardized weapon damage (Fixed/Random/Total) based on ammo type. These are a baseline.
 ---
 		5.7: 15/20 (15-35, Ex. P90 and Five SeveN)
-		.38: 20/25 (20-45), Ex. .38 Revolver)
-		9mm: 20/25 (20-45), Ex. 9mm Pistol)
-		.44: 25/25 (25-50), Ex. .44 Revolver)
-		.45: 20/30 (20-50), Ex. .45 Pistol)
-		.50: 25/25 (25-50), Ex. Desert Eagle)
+		.38: 20/25 (20-45, Ex. .38 Revolver)
+		9mm: 20/25 (20-45, Ex. 9mm Pistol)
+		.44: 25/25 (25-50, Ex. .44 Revolver)
+		.45: 20/30 (20-50, Ex. .45 Pistol)
+		.50: 25/25 (25-50, Ex. Desert Eagle)
 		
 		SMG: 20/25 (20-45, Ex. 9mm SMG)
 		Shotgun: 30/25 (30-55, Ex. Shotgun)
@@ -291,6 +291,7 @@ New Weapons
 		Brass Knuckles (Unarmed)
 		Spiked Knuckles (Unarmed)
 		Tomahawk (Axe)
+		Trench Spade (Axe)
 		
 		WIP: 2x4 (Club)
 		WIP: Lead Pipe (Club)
